@@ -1,0 +1,45 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahn et~al.(2010)Ahn, Mann, Walsh, Shehab, Hoang, Docherty, Mohammed,
+  and Mackie~Ogilvie]{ahn2010}
+Joo~Wook Ahn, Kathy Mann, Sally Walsh, Marwa Shehab, Sarah Hoang, Zoe Docherty,
+  Shehla Mohammed, and Caroline Mackie~Ogilvie.
+\newblock Validation and implementation of array comparative genomic
+  hybridisation as a first line test in place of postnatal karyotyping for
+  genome imbalance.
+\newblock \emph{Molecular Cytogenetics}, 3:\penalty0 9, April 2010.
+\newblock ISSN 1755-8166.
+\newblock \doi{10.1186/1755-8166-3-9}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2885406/}.
+\newblock {PMID:} 20398301 {PMCID:} {PMC2885406}.
+
+\bibitem[Hupe(2004)]{hupe2004}
+Phillipe Hupe.
+\newblock {GLAD-Introduction}.
+\newblock http://bioinfo-out.curie.fr/projects/glad/node2.html, November 2004.
+\newblock URL \url{http://bioinfo-out.curie.fr/projects/glad/node2.html}.
+
+\bibitem[Roy and Motsinger~Reif(2013)]{roy2013}
+Siddharth Roy and Alison Motsinger~Reif.
+\newblock Evaluation of calling algorithms for {array-CGH}.
+\newblock \emph{Frontiers in Genetics}, 4, October 2013.
+\newblock ISSN 1664-8021.
+\newblock \doi{10.3389/fgene.2013.00217}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3829466/}.
+\newblock {PMID:} 24298279 {PMCID:} {PMC3829466}.
+
+\bibitem[Zhang et~al.(2009)Zhang, Gu, Hurles, and Lupski]{zhang2009}
+Feng Zhang, Wenli Gu, Matthew~E. Hurles, and James~R. Lupski.
+\newblock Copy number variation in human health, disease, and evolution.
+\newblock \emph{Annual Review of Genomics and Human Genetics}, 10\penalty0
+  (1):\penalty0 451--481, 2009.
+\newblock \doi{10.1146/annurev.genom.9.081307.164217}.
+\newblock URL \url{http://dx.doi.org/10.1146/annurev.genom.9.081307.164217}.
+\newblock {PMID:} 19715442.
+
+\end{thebibliography}

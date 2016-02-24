@@ -1,0 +1,15 @@
+\select@language {american}
+\vspace {-\cftbeforepartskip }
+\select@language {american}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Abstract}}{v}{chapter.1}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Introduction}}{1}{chapter.2}
+\contentsline {section}{\numberline {2.1}What has been done previously in this area?}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Array design}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Raw array data}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Use of algorithms in \ac {CNV} calling}{4}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}Z-score algorithm}{5}{subsubsection.2.1.3.1}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Aberration Detection Method (ADM-1/ADM-2)}{5}{subsubsection.2.1.3.2}
+\contentsline {subsubsection}{\numberline {2.1.3.3}Circular binary segmentation (\ac {CBS})}{6}{subsubsection.2.1.3.3}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{7}{appendix.A}
+\vspace {\beforebibskip }
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{8}{dummy.7}

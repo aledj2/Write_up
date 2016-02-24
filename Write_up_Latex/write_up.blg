@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: write_up.aux
+A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
+A level-1 auxiliary file: FrontBackmatter/Contents.aux
+A level-1 auxiliary file: FrontBackMatter/ListOfFigures.aux
+A level-1 auxiliary file: FrontBackMatter/ListOfTables.aux
+A level-1 auxiliary file: FrontBackmatter/Dedication.aux
+A level-1 auxiliary file: FrontBackmatter/Abstract.aux
+A level-1 auxiliary file: FrontBackmatter/Declaration.aux
+A level-1 auxiliary file: FrontBackmatter/IntellectualProperty.aux
+A level-1 auxiliary file: FrontBackmatter/Acknowledgments.aux
+A level-1 auxiliary file: Chapters/Chapter01.aux
+A level-1 auxiliary file: FrontBackmatter/Appendix.aux
+A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
+The style file: plainnat.bst
+A level-1 auxiliary file: FrontBackmatter/Colophon.aux
+Database file #1: Bibliography.bib
+I was expecting a `,' or a `}'---line 25 of file Bibliography.bib
+ :  
+ :  note = {R package version 1.40.0},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "agilenttechnologies????"
+(There was 1 error message)

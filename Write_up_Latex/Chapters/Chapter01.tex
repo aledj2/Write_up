@@ -1,0 +1,116 @@
+
+%************************************************
+\chapter{Introduction}\label{ch:introduction}
+%************************************************
+An introduction to the project
+\begin{itemize}
+  \item Diagnostic CNV detection in NHS
+  	\begin{itemize}
+    \item what CNVS are
+    \item Karyotyping
+    \item PCR/MLPA
+    \item arrayCGH
+    \end{itemize}
+  \item What microarrays are
+  	\begin{itemize}
+    \item technology 
+	\end{itemize} 
+  \item how microarrays are used at Guys
+  	\begin{itemize}
+    \item patient to patient
+    \item run sheets
+    \item studies to justify
+    \end{itemize}
+  \item why this tool is needed
+  \item what has been done before
+  \item functional requirements 
+	
+\end{itemize}
+
+
+Array \ac{CGH} is a commonly used diagnostic test in clinical genetics. The test utilises many probes (up to 60,000) attached to a glass slide.
+Each probe consists of many copies of an oligonucleotide 40-60 base pairs long, designed to target a specific region of the genome. 
+Samples are hybridised to the array in a competitive reaction, usually a diagnostic sample in competition with a reference sample. \\
+
+The diagnostic sample and reference samples are labelled with a fluorescent dye (patient Cy5 and reference Cy3). 
+Once hybridised the array is scanned producing a high resolution image of the
+array \citep{ahn2010}.
+This image undergoes feature extraction to calculate the signal intensities at each probe and associated quality scores.\\
+
+This data can then be analysed for \ac{CNV} by applying one of a number of available algorithms:
+ The probe scores are normalised, split into segments of equal copy number and each segment assigned a copy number status \citep{hupe2004}. \\
+
+During the data normalisation the signal intensities are calculated and given quality scores. 
+Dividing the signal intensity of Cy5 by that of Cy3 produces a ratio where equal
+copy number is 1.
+This ratio is then logged (base 2) to produce the log2 ratio where equal copy number is 0, loss of material is shown with a negative number and gain of material positive. \\
+
+Copy number variation represents a deviance in copy number from a reference genome which typically contains 2 copies of a DNA segment \citep{roy2013}. 
+\acp{CNV} can occur in recombination and replication events. \acp{CNV} can be benign polymorphisms or associated with Mendelian, sporadic and complex disease possibly through gene dosage, disruption, fusion or positional effects \citep{zhang2009}.\\
+
+In 2009 array \ac{CGH} started replacing karyotyping as the method for detection of \acp{CNV} in NHS diagnostic genetic services. Array \ac{CGH} offers a higher resolution, less reliance on analyst interpretation/skill and the advantage of a high throughput practical workflow, however few trusts actually have this test commissioned due to the higher cost. Guy's and St Thomas' NHS Trust adopted a patient to patient hybridisation approach (using 8x60K Agilent array design) which halves the cost of consumables by replacing the reference sample with another patient sample \citep {ahn2010}.\\
+
+As array \ac{CGH} compares two samples the use of a normal reference sample infers any \ac{CNV} detected is from the patient. Hybridising two patients removes this assumption, producing two challenges:
+\begin{enumerate}
+	\item Is a \ac{CNV} is a duplication in one patient, or a deletion in the second patient?
+	\item If both patients have the same \ac{CNV} relatively no difference would be found, not detecting the \ac{CNV}.
+\end{enumerate}	
+
+
+The first challenge can be overcome by comparing the signal intensities of each dye across the imbalance and across normal regions. One patient will have different signal intensity in this region and one will have no difference.\\
+
+The second challenge requires ``a careful consideration of patient referral information'' to reduce the risk of this occurring. Hybridisation partners are mismatched on phenotype \citep{ahn2010}. This assumes that patients with differing referral reasons eg heart vs. renal defects will not have the same underlying \ac{CNV}.\\
+
+The product of the increased resolution of arrays is a higher abnormality pick up rate than karyotyping. 
+
+The aim of this project is to create a tool which is run during data processing/analysis and uses signal intensity (as opposed to log signal ratio) to detect \ac{CNV} independently of the hybridisation partner.\\
+The Cy3 and Cy5 signal intensities can be compared to a reference set of signal intensities created from previous arrays. Results from each hybridisation partner can be compared to identify any shared \ac{CNV} which may not be identified using the signal ratio.
+
+\section{What has been done previously in this area?}
+\subsection{Array design}
+The arrays, reagents, equipment and software used to process and analyse are manufactured by Agilent Technologies \citep{agilenttechnologieshome}. The probe design is stored on the online probe catalogue/custom array design tool eArray \citep{agilenttechnologies_earray}.
+
+A request/suggestion for a tool similar to that which this project aims to create was sent and declined by Agilent.
+
+\subsection{Raw array data}
+The feature extraction produces a tab delimited text file of 10-15mb in size.
+This file is split into three sections: metadata about the array run, background measurements and then a number of measurements for each probe.
+
+Each probe has a name, genomic location and physical position on the array and 35 measurements including the signal intensity, probe saturation and background readings for each dye.
+
+\subsection{Use of algorithms in \ac{CNV} calling}
+If all goals of this project are met the tool produced will have much the same role as the aberration detection algorithms, taking feature extracted data and looking for \ac{CNV}.
+
+There are a number of algorithms which are in use for \ac{CNV} calling from \ac{CGH} data. These algorithms are recursive binary segmentation methods which break down chromosomes into segments of equal copy number. Examples include Z-scores, \ac{CBS}, aberration detection method (ADM 2), nexus and \ac{HMM}. 
+
+\subsubsection{Z-score algorithm}
+Z-scores are a statistical measure of deviation from the mean for a normally distributed population. The Z-score algorithm starts off by giving a Z-score to signal log ratio for each probe. Any probes above a user defined Z-cut off can be classified as an outlier, or significantly away from mean. 
+
+The number of probes classified as above (R) and below this threshold (R') and total number of measurements (N) are recorded and used when calculating the moving average of small windows of the genome. 
+
+These 'windows' can be specified as a number of adjacent measurements or a fixed size eg every 1MB. Within each window the abundance of probes which log ratios which deviate from the mean is measured (r:r').
+A Z-score is then calculated measuring the significance of the over-abundance of probes with a deviant score in this window (Agilent Technologies, 2012).
+
+\subsubsection{Aberration Detection Method (ADM-1/ADM-2)}
+These algorithms are designed by Agilent. These algorithms do not used fixed windows but segments the genome into intervals of equal copy number using signal log ratio scores from adjacent probes to best define interval breakpoints.
+
+ADM-1\\
+ Firstly the data is normalised by subtracting the mean log ratio and dividing by the variance, creating a normally distributed population with a mean of 0. 
+Each chromosome is then broken into intervals of equal copy number and intervals are assigned a score (S(I)) which denotes the difference from the mean. A user defined threshold is set and any intervals which are above this are called as an aberration.
+The interval with the highest score is selected and the same process is performed on this segment to further define breakpoints. This is repeated for all intervals with an S(I) above the threshold.
+
+The ADM-2 algorithm builds on ADM-1 by including probe quality information to weight probe signal log ratios when assigning S(I).
+
+
+
+
+\subsubsection{Circular binary segmentation (\ac{CBS})}
+Circular binary segmentation (\ac{CBS}) also uses adjacent probe log ratio scores to create intervals which, as opposed to ADM-1/2 (which classifies segments as aberrant or not), are grouped into intervals with equal copy number. 
+
+Each chromosome is made into a circle (Figure 1). This allows for two break points to be identified which increases the resolution of detection. When two breakpoints are detected the interval of potential different copy number is removed, and the flanking regions are joined to form a new circle. This allows a t-test to be performed between the mean log ratios on each interval. 
+
+Definition of an interval is determined using permutation testing, creating intervals using various breakpoints and looking for the most significant P value. If this P value is above a threshold an interval is created and the process is repeated for all intervals until no more changes are found.
+A number of checks are performed to ensure the correct end points have been found including edge effect correction, change point pruning and estimation of the log score distribution.
+
+
+%*****************************************
