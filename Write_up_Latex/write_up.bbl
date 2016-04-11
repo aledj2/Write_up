@@ -37,31 +37,28 @@ Joo~Wook Ahn, Susan Bint, Anne Bergbaum, Kathy Mann, Richard~P Hall, and
 \newblock {PMID:} 23560982 {PMCID:} {PMC3632487}.
 
 \bibitem{jordan_microarrays_2012}
-Bertrand Jordan, editor.
+Bertrand Jordan,.
 \newblock {\em Microarrays in diagnostics and biomarker development: current
   and future applications}.
 \newblock Springer, Heidelberg ; New York, 2012.
 
 \bibitem{dunlop2015}
 John Dunlop and Jake Miller.
-\newblock Why haven't you adopted a patient to patient approach?, July 2015.
+\newblock Why haven't you adopted a patient to patient approach?\newblock Personal communication, July 2015.
 
 \bibitem{joowook_ahn_frequency_2015}
 {JooWook Ahn}.
-\newblock The frequency of abnormalities suggest a 1 in 6000 chance of two
-  patients randomly having the same imbalance, June 2015.
+\newblock The frequency of abnormalities suggest a 1 in 6000 chance of two patients randomly having the same imbalance, \newblock Personal Communication, June 2015.
 
 \bibitem{agilenttechnologies_microarrays}
 Agilent Technologies.
 \newblock {CGH} \& {CGH+SNP} microarrays.
-\newblock
-  {http://www.genomics.agilent.com/en/CGH-CGH-SNP-Microarrays/;jsessionid=Hz91Jt8CfVWDlHljTS2ytPCJG1R3P9xvNZqtS8JrtxP0wrThNLbH!867729385?pgid=AG-PG-9},
-  2016.
+\newblock  \url{http://www.genomics.agilent.com/en/CGH-CGH-SNP-Microarrays/}, \newblock accessed 2015-01-07.
 
 \bibitem{agilenttechnologies_earray}
 Agilent Technologies.
 \newblock {eArray}.
-\newblock https://earray.chem.agilent.com/earray/, 2016.
+\newblock \url{https://earray.chem.agilent.com/earray/}, \newblock accessed 2015-01-07.
 
 \bibitem{agilent_technologies_agilent_2011}
 {Agilent Technologies}.
@@ -76,28 +73,26 @@ E.~S. Venkatraman and Adam~B. Olshen.
 
 \bibitem{willenbrock2005}
 Hanni Willenbrock and Jane Fridlyand.
-\newblock A comparison study: applying segmentation to array {CGH} data for
-  downstream analyses.
+\newblock A comparison study: applying segmentation to array {CGH} data for downstream analyses.
 \newblock {\em Bioinformatics}, 21(22):4084--4091, November 2005.
 \newblock {PMID:} 16159913.
 
 \bibitem{lai2005}
 Weil~R. Lai, Mark~D. Johnson, Raju Kucherlapati, and Peter~J. Park.
-\newblock Comparative analysis of algorithms for identifying amplifications and
-  deletions in array {CGH} data.
+\newblock Comparative analysis of algorithms for identifying amplifications and deletions in array {CGH} data.
 \newblock {\em Bioinformatics {(Oxford}, England)}, 21(19):3763, October 2005.
 \newblock {PMID:} 16081473 {PMCID:} {PMC2819184}.
 
 \bibitem{niu_screening_2012}
 Yue~S. Niu and Heping Zhang.
-\newblock {THE} {SCREENING} {AND} {RANKING} {ALGORITHM} {TO} {DETECT} {DNA}
-  {COPY} {NUMBER} {VARIATIONS}.
+\newblock {THE} {SCREENING} {AND} {RANKING} {ALGORITHM} {TO} {DETECT} {DNA}{COPY} {NUMBER} {VARIATIONS}.
 \newblock {\em The annals of applied statistics}, 6(3):1306--1326, September
   2012.
 
 \bibitem{mongodb_inc._mongodb_????}
 {MongoDB, Inc.}
-\newblock {MongoDB}.
+\newblock {MongoDB}. \newblock \url{https://www.mongodb.org/}, \newblock
+accessed 24/02/2016.
 
 \bibitem{vanderwalt2011}
 S.~van~der Walt, {S.C.} Colbert, and G.~Varoquaux.
@@ -106,29 +101,28 @@ S.~van~der Walt, {S.C.} Colbert, and G.~Varoquaux.
 
 \bibitem{scipy_scipyorg_????}
 {SciPy}.
-\newblock Scipy.org.
+\newblock \url{www.Scipy.org},\newblock accessed 15/01/2015
 
 \bibitem{dustman2014}
 Andy Dustman.
-\newblock {MySQLdb1}.
-\newblock {https://github.com/farcepest/MySQLdb1}, January 2014.
+\newblock {MySQLdb}.
+\newblock {\url{https://github.com/farcepest/MySQLdb1}},  January 2014,\newblock accessed 15/1/2015.
 
 \bibitem{bayer_sqlalchemy_????}
 Michael Bayer.
-\newblock {SQLAlchemy}.
+\newblock {SQLAlchemy - The Database Toolkit for Python}, \newblock \url{http://www.sqlalchemy.org/}, \newblock accessed 15/01/2015.
 
 \bibitem{pyodbc_mkleehammer/pyodbc_????}
 {pyodbc}.
-\newblock mkleehammer/pyodbc.
+\newblock \url{https://github.com/mkleehammer/pyodbc},\newblock accessed 25/03/2016.
 
 \bibitem{pymongo_python_????}
 {PyMongo}.
 \newblock {Python} {Driver} {(PyMongo)} {Getting} {Started} {With} {MongoDB}
-  3.0.4.
+  3.0.4, \newblock \url{https://docs.mongodb.org/getting-started/python/client/},\newblock accessed 24/02/2016.
 
 \bibitem{rfoundationforstatisticalcomputing2014}
-R~Foundation for Statistical~Computing.
-\newblock R: A language and environment for statistical computing, 2014.
+R: A language and environment for statistical computing, version 3.1.2, R Foundation for Statistical Computing, \newblock \url{http://www.R-project.org/}, \newblock accessed 15/01/2015.
 
 \bibitem{huber_orchestrating_2015}
 Wolfgang Huber, Vincent~J Carey, Robert Gentleman, Simon Anders, Marc Carlson,
@@ -142,45 +136,46 @@ Wolfgang Huber, Vincent~J Carey, Robert Gentleman, Simon Anders, Marc Carlson,
 
 \bibitem{Sechan2015}
 Venkatraman~E. Sechan and Adam Olshen.
-\newblock Dnacopy : Dna copy number data analysis.
+\newblock Dnacopy : Dna copy number data analysis, \newblock \url{http://master.bioconductor.org/packages/release/bioc/html/DNAcopy.html}, acccessed 10/01/2015.
 
 \bibitem{mysql_mysql_????}
 {MySQL}.
-\newblock {MySQL} {Community} {Server}.
+\newblock {MySQL} {Community} {Server} version 5.6, \newblock \url {https://dev.mysql.com/downloads/mysql/5.6.html#downloads}, \newblock accessed 11/04/2016.
 
 \bibitem{_sql_????}
-{SQL} {Server} {Express} {Edition} {Microsoft}.
+{SQL} {Server} {Express} {Edition}, {Microsoft}, \newblock \url{https://www.microsoft.com/en-gb/server-cloud/products/sql-server-editions/sql-server-express.aspx},\newblock accessed 22/03/2016.
 
 \bibitem{_microsoft_????}
-Microsoft {SQL} {Server} {Migration} {Assistant} v5.3 {for} {MySQL}.
+Microsoft {SQL} {Server} {Migration} {Assistant} v5.3 {for} {MySQL}, Microsoft,
+\newblock \url{https://www.microsoft.com/en-us/download/details.aspx?id=42657},\newblock acccessed 22/03/2016.
 
 \bibitem{heidisql_heidisql_2016}
 {HeidiSQL}.
-\newblock {HeidiSQL} - {MySQL}, {MSSQL} and {PostgreSQL} made easy, 2016.
+\newblock {HeidiSQL} - {MySQL}, {MSSQL} and {PostgreSQL} made easy, 
+\newblock \url{http://www.heidisql.com/},\newblock accessed 09/04/2016.
 
 \bibitem{python_software_foundation_python_2010}
 {Python Software Foundation}.
-\newblock Python {Language} {Reference}, version 2.7, July 2010.
+\newblock Python {Language} {Reference}, version 2.7, July 2010 \newblock \url{http://www.python.org},\newblock accessed 19/01/2015.
 
 \bibitem{continuum_why_2016}
 {Continuum}.
-\newblock Why {Anaconda}?, April 2016.
+\newblock Why {Anaconda}?, \newblock \url{https://www.continuum.io/why-anaconda},\newblock accessed 10/04/2016.
 
 \bibitem{the_eclipse_foundation_eclipse_????}
 {The Eclipse Foundation}.
-\newblock Eclipse {IDE}.
+\newblock Eclipse {IDE} \newblock \url{https://www.eclipse.org},\newblock accessed 11/04/2016.
 
 \bibitem{pydev_python_????}
 {PyDev}.
-\newblock Python {IDE} for {Eclipse}.
+\newblock Python {IDE} for {Eclipse}, \newblock \url{http://www.pydev.org/},\newblock acccessed 11/04/2016.
 
 \bibitem{pylint_code_????}
 {Pylint}.
-\newblock Code analysis for {Python}.
+\newblock Code analysis for {Python}, \newblock \url{https://www.pylint.org/},\newblock accessed 10/04/2016.
 
-\bibitem{agilenttechnologies2012}
-Agilent Technologies.
-\newblock Aglient workbench - {CGH} interactive analysis user guide, April
-  2012.
+\bibitem{joowook_ahn_average_2015}
+{JooWook Ahn}.
+\newblock The average number of calls for each patient during analysis of array{CGH} cases.,\newblock Personal communication Feb 2016.
 
 \end{thebibliography}

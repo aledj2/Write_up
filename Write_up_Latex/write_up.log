@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.31)  11 APR 2016 23:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.31)  12 APR 2016 00:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,8 +950,8 @@ Overfull \hbox (18.83385pt too wide) in paragraph at lines 38--38
 
 
 ]
-Overfull \hbox (31.20381pt too wide) in paragraph at lines 42--42
- [][] []\T1/pplj/m/n/12 Importing and pro-cess-ing fea-ture ex-trac-tion files 
+Overfull \hbox (38.40382pt too wide) in paragraph at lines 42--42
+ [][] []\T1/pplj/m/n/12 Importing and Pro-cess-ing Fea-ture Ex-trac-tion Files 
 []  
  []
 
@@ -1006,8 +1006,8 @@ Overfull \hbox (0.63463pt too wide) in paragraph at lines 94--94
  []
 
 
-Overfull \hbox (29.09862pt too wide) in paragraph at lines 101--101
- [][] []\T1/pplj/m/n/12 Array re-design/-mul-ti-ple ar-ray plat-forms []  
+Overfull \hbox (36.05865pt too wide) in paragraph at lines 101--101
+ [][] []\T1/pplj/m/n/12 Array re-design and mul-ti-ple ar-ray de-signs []  
  []
 
 )
@@ -1443,20 +1443,13 @@ Package pdftex.def Info: ./Figures/combiningtrioofprobes.jpg used on input line
 37 <./Figures/consecutiveprobeanalysis.jpg>]
 Package acronym Info: Label `acro:PGD' newly defined as it shall be overridden
 although it is yet undefined on input line 184.
- [38 <./Figures/combiningtrioofprobes.jpg>]
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 219.
-
-
-Package natbib Warning: Citation `joowook_ahn_average_2015' on page 39 undefine
-d on input line 219.
-
-[39]) [40]
+ [38 <./Figures/combiningtrioofprobes.jpg>] [39]) [40]
 \openout2 = `Chapters/Chapter03.aux'.
 
- (./Chapters/Chapter03.tex
+
+(./Chapters/Chapter03.tex
 Chapter 3.
-<./Figures/probeswithinreportedregion.png, id=911, 613.29124pt x 332.24126pt>
+<./Figures/probeswithinreportedregion.png, id=912, 613.29124pt x 332.24126pt>
 File: ./Figures/probeswithinreportedregion.png Graphic file (type png)
 
 <use ./Figures/probeswithinreportedregion.png>
@@ -1482,21 +1475,21 @@ ere-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 44.
 
-[42] <./Figures/nprobes_2_374.jpeg, id=926, 2107.875pt x 1170.3725pt>
+[42] <./Figures/nprobes_2_374.jpeg, id=927, 2107.875pt x 1170.3725pt>
 File: ./Figures/nprobes_2_374.jpeg Graphic file (type jpg)
 
 <use ./Figures/nprobes_2_374.jpeg>
 Package pdftex.def Info: ./Figures/nprobes_2_374.jpeg used on input line 70.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
  [43 <./Figures/nprobes_2_374.jpeg>]
-<./Figures/lowest_2_374.jpeg, id=936, 2107.875pt x 1170.3725pt>
+<./Figures/lowest_2_374.jpeg, id=937, 2107.875pt x 1170.3725pt>
 File: ./Figures/lowest_2_374.jpeg Graphic file (type jpg)
 
 <use ./Figures/lowest_2_374.jpeg>
 Package pdftex.def Info: ./Figures/lowest_2_374.jpeg used on input line 81.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/average_2_374.jpeg, id=937, 2107.875pt x 1170.3725pt>
+<./Figures/average_2_374.jpeg, id=938, 2107.875pt x 1170.3725pt>
 File: ./Figures/average_2_374.jpeg Graphic file (type jpg)
 
 <use ./Figures/average_2_374.jpeg>
@@ -1506,7 +1499,7 @@ Package pdftex.def Info: ./Figures/average_2_374.jpeg used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/lowest_3_55.jpeg, id=941, 2107.875pt x 1170.3725pt>
+<./Figures/lowest_3_55.jpeg, id=942, 2107.875pt x 1170.3725pt>
 File: ./Figures/lowest_3_55.jpeg Graphic file (type jpg)
 
 <use ./Figures/lowest_3_55.jpeg>
@@ -1516,7 +1509,7 @@ Package pdftex.def Info: ./Figures/lowest_3_55.jpeg used on input line 101.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/average_3_55.jpeg, id=943, 2107.875pt x 1170.3725pt>
+<./Figures/average_3_55.jpeg, id=944, 2107.875pt x 1170.3725pt>
 File: ./Figures/average_3_55.jpeg Graphic file (type jpg)
 
 <use ./Figures/average_3_55.jpeg>
@@ -1527,7 +1520,7 @@ Package pdftex.def Info: ./Figures/average_3_55.jpeg used on input line 111.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<./Figures/testcasesaverageconfidenceZscore.jpeg, id=950, 2107.875pt x 1170.372
+<./Figures/testcasesaverageconfidenceZscore.jpeg, id=951, 2107.875pt x 1170.372
 5pt>
 File: ./Figures/testcasesaverageconfidenceZscore.jpeg Graphic file (type jpg)
  <use ./Figures/testcasesaverageconfidenceZscore.jpeg>
@@ -1535,7 +1528,7 @@ Package pdftex.def Info: ./Figures/testcasesaverageconfidenceZscore.jpeg used o
 n input line 126.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/testcaseshighestconfidenceZscore.jpeg, id=951, 2107.875pt x 1170.372
+<./Figures/testcaseshighestconfidenceZscore.jpeg, id=952, 2107.875pt x 1170.372
 5pt>
 File: ./Figures/testcaseshighestconfidenceZscore.jpeg Graphic file (type jpg)
  <use ./Figures/testcaseshighestconfidenceZscore.jpeg>
@@ -1543,7 +1536,7 @@ Package pdftex.def Info: ./Figures/testcaseshighestconfidenceZscore.jpeg used o
 n input line 133.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/testcaseslowestconfidenceZscore.jpeg, id=952, 2107.875pt x 1170.3725
+<./Figures/testcaseslowestconfidenceZscore.jpeg, id=953, 2107.875pt x 1170.3725
 pt>
 File: ./Figures/testcaseslowestconfidenceZscore.jpeg Graphic file (type jpg)
  <use ./Figures/testcaseslowestconfidenceZscore.jpeg>
@@ -1551,7 +1544,7 @@ Package pdftex.def Info: ./Figures/testcaseslowestconfidenceZscore.jpeg used on
  input line 140.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/testcasesprobecount.jpeg, id=953, 2107.875pt x 1170.3725pt>
+<./Figures/testcasesprobecount.jpeg, id=954, 2107.875pt x 1170.3725pt>
 File: ./Figures/testcasesprobecount.jpeg Graphic file (type jpg)
 
 <use ./Figures/testcasesprobecount.jpeg>
@@ -1564,7 +1557,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 159.
 
 [45 <./Figures/average_2_374.jpeg>]
-<./Figures/testcasestrueposcoverage.png, id=962, 544.0325pt x 369.38pt>
+<./Figures/testcasestrueposcoverage.png, id=963, 544.0325pt x 369.38pt>
 File: ./Figures/testcasestrueposcoverage.png Graphic file (type png)
 
 <use ./Figures/testcasestrueposcoverage.png>
@@ -1576,7 +1569,7 @@ ine 180.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 193.
 
-<./Figures/prospectivesamplecalls.jpg, id=968, 1406.25375pt x 420.57124pt>
+<./Figures/prospectivesamplecalls.jpg, id=969, 1406.25375pt x 420.57124pt>
 File: ./Figures/prospectivesamplecalls.jpg Graphic file (type jpg)
 
 <use ./Figures/prospectivesamplecalls.jpg>
@@ -1623,7 +1616,7 @@ Overfull \hbox (2.74796pt too wide) in paragraph at lines 44--45
 mall,
  []
 
-<./Figures/incorrectcallandalternatecomb.jpg, id=1005, 1204.5pt x 266.9975pt>
+<./Figures/incorrectcallandalternatecomb.jpg, id=1006, 1204.5pt x 266.9975pt>
 File: ./Figures/incorrectcallandalternatecomb.jpg Graphic file (type jpg)
 
 <use ./Figures/incorrectcallandalternatecomb.jpg>
@@ -1686,12 +1679,6 @@ Underfull \hbox (badness 1406) in paragraph at lines 13--16
 []\T1/pplj/m/n/12 Phillipe Hupe.  GLAD-Introduction.  http://bioinfo-
  []
 
-
-Underfull \hbox (badness 3884) in paragraph at lines 40--44
-[]\T1/pplj/m/n/12 Bertrand Jor-dan, ed-i-tor.  \T1/pplj/m/it/12 Mi-croar-rays i
-n di-ag-nos-tics
- []
-
 [64
 
 
@@ -1699,37 +1686,81 @@ n di-ag-nos-tics
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 55--60
-\T1/pplj/m/n/12 http://www.genomics.agilent.com/en/CGH-CGH-SNP-
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+[]\T1/pplj/m/n/12 Agilent Tech-nolo-gies.  CGH & CGH+SNP mi-
  []
 
 
-Overfull \hbox (283.85475pt too wide) in paragraph at lines 55--60
-\T1/pplj/m/n/12 Microarrays/;jsessionid=Hz91Jt8CfVWDlHljTS2ytPCJG1R3P9xvNZqtS8J
-rtxP0wrThNLbH!867729385?pgid=AG-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
-[]\T1/pplj/m/n/12 Agilent Tech-nolo-gies.  eAr-ray.
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+\T1/pplj/m/n/12 croar-rays.  [][]$\T1/fvm/m/n/12 http : / / www . genomics . ag
+ilent . com / en /
  []
 
 [65]
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-[]\T1/pplj/m/n/12 Andy Dust-man.  MySQLdb1.
+Underfull \hbox (badness 2409) in paragraph at lines 107--110
+[]\T1/pplj/m/n/12 Andy Dust-man.  MySQLdb.  [][]$\T1/fvm/m/n/12 https : / / git
+hub . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-\T1/pplj/m/n/12 https://github.com/farcepest/MySQLdb1, Jan-uary
+Underfull \hbox (badness 1142) in paragraph at lines 112--114
+\T1/pplj/m/n/12 for Python,  [][]$\T1/fvm/m/n/12 http : / / www . sqlalchemy . 
+org/$[][]\T1/pplj/m/n/12 ,  ac-cessed
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 134--142
+Underfull \hbox (badness 5563) in paragraph at lines 120--123
+\T1/pplj/m/n/12 With Mon-goDB 3.0.4,  [][]$\T1/fvm/m/n/12 https : / / docs . mo
+ngodb . org /
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 128--136
 \T1/pplj/m/n/12 Girke, Raphael Got-tardo, Flo-rian Hahne, Kasper D
  []
 
-[66])) [67]
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+\T1/fvm/m/n/12 org / packages / release / bioc / html / DNAcopy . html$[][]\T1/
+pplj/m/n/12 , ac-c-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
+\T1/fvm/m/n/12 / / dev . mysql . com / downloads / mysql / 5 . 6 . html # downl
+oads$[][]\T1/pplj/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+[]\T1/pplj/m/n/12 SQL Server Ex-press Edi-tion, Mi-crosoft,  [][]$\T1/fvm/m/n/1
+2 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+\T1/fvm/m/n/12 / / www . microsoft . com / en-[]gb / server-[]cloud / products 
+/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+\T1/fvm/m/n/12 sql-[]server-[]editions / sql-[]server-[]express . aspx$[][]\T1/
+pplj/m/n/12 , ac-
+ []
+
+[66]
+Underfull \hbox (badness 1968) in paragraph at lines 153--156
+[]\T1/pplj/m/n/12 HeidiSQL.  Hei-diSQL - MySQL, MSSQL and Post-
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 166--168
+[]\T1/pplj/m/n/12 The Eclipse Foun-da-tion.  Eclipse IDE  [][]$\T1/fvm/m/n/12 h
+ttps : / / www .
+ []
+
+)) [67]
 \openout2 = `FrontBackmatter/Colophon.aux'.
 
  (./FrontBackmatter/Colophon.tex) [68
@@ -1738,16 +1769,13 @@ Underfull \hbox (badness 2846) in paragraph at lines 134--142
 
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
-(./write_up.aux (./FrontBackmatter/Titlepage.aux)
-(./FrontBackmatter/Contents.aux) (./FrontBackmatter/Dedication.aux)
-(./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Declaration.aux)
-(./FrontBackmatter/IntellectualProperty.aux)
-(./FrontBackmatter/Acknowledgments.aux) (./Chapters/Chapter01.aux)
+ (./write_up.aux
+(./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Contents.aux)
+(./FrontBackmatter/Dedication.aux) (./FrontBackmatter/Abstract.aux)
+(./FrontBackmatter/Declaration.aux) (./FrontBackmatter/IntellectualProperty.aux
+) (./FrontBackmatter/Acknowledgments.aux) (./Chapters/Chapter01.aux)
 (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter04.aux
 ) (./Chapters/Chapter05.aux) (./FrontBackmatter/Bibliography.aux)
 (./FrontBackmatter/Colophon.aux))
@@ -1928,22 +1956,16 @@ FrontBackmatter/Colophon.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
-
-Package rerunfilecheck Warning: File `write_up.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `write_up.out':
-(rerunfilecheck)             Before: 2AD237883E629D7D18900BBC94407EAC;7777
-(rerunfilecheck)             After:  705DDBD4B75896E6B240651E081D1E54;7777.
+Package rerunfilecheck Info: File `write_up.out' has not changed.
+(rerunfilecheck)             Checksum: 705DDBD4B75896E6B240651E081D1E54;7777.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 16421 strings out of 495028
- 258384 string characters out of 6181497
+ 16413 strings out of 495028
+ 258285 string characters out of 6181497
  443690 words of memory out of 5000000
- 18871 multiletter control sequences out of 15000+600000
- 74436 words of font info for 100 fonts, out of 8000000 for 9000
+ 18867 multiletter control sequences out of 15000+600000
+ 71511 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,15n,67p,1090b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/aled/.texm
@@ -1954,13 +1976,12 @@ pe1/public/amsfonts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplr
 ij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on write_up.pdf (68 pages, 2557447 bytes).
+r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on write_up.pdf (68 pages, 2552897 bytes).
 PDF statistics:
- 1208 PDF objects out of 1440 (max. 8388607)
- 1069 compressed objects within 11 object streams
+ 1236 PDF objects out of 1440 (max. 8388607)
+ 1098 compressed objects within 11 object streams
  291 named destinations out of 1000 (max. 500000)
- 16268 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 15756 words of extra memory for PDF output out of 17280 (max. 10000000)
 

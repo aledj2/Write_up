@@ -17,36 +17,40 @@ A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 Database file #1: Bibliography.bib
+"{" immediately follows a field part---line 32 of file Bibliography.bib
+ :  url = \url
+ :            {{http://www.R-project.org/}},
+I'm skipping whatever remains of this entry
 You've used 35 entries,
             1791 wiz_defined-function locations,
-            616 strings with 8876 characters,
-and the built_in function-call counts, 5745 in all, are:
-= -- 422
-> -- 300
+            615 strings with 8870 characters,
+and the built_in function-call counts, 5716 in all, are:
+= -- 419
+> -- 297
 < -- 0
-+ -- 119
-- -- 84
-* -- 295
-:= -- 907
-add.period$ -- 90
++ -- 118
+- -- 83
+* -- 294
+:= -- 896
+add.period$ -- 89
 call.type$ -- 35
 change.case$ -- 34
 chr.to.int$ -- 0
 cite$ -- 35
 duplicate$ -- 220
 empty$ -- 668
-format.name$ -- 84
-if$ -- 1272
+format.name$ -- 83
+if$ -- 1268
 int.to.chr$ -- 0
 int.to.str$ -- 35
 missing$ -- 11
-newline$ -- 163
-num.names$ -- 34
-pop$ -- 150
+newline$ -- 162
+num.names$ -- 33
+pop$ -- 149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 168
+skip$ -- 172
 stack$ -- 0
 substring$ -- 177
 swap$ -- 35
@@ -55,6 +59,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 48
+while$ -- 47
 width$ -- 37
-write$ -- 321
+write$ -- 318
+(There was 1 error message)
