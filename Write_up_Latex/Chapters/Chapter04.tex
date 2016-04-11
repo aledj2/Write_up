@@ -2,31 +2,38 @@
 \chapter{Discussion}\label{ch:Discussion} 
 %************************************************
 \section{Suitability of SID}
-The Shared Imbalance Detection (SID)) tool, written in Python and utilising a MS-SQL database capable of taking a feature extraction file and by applying a Z score algorithm can detect regions of shared CNV from manually created true positive cases with a sensitivity of 100\% in a timely fashion.
+The Shared Imbalance Detection (SID)) tool, written in Python and utilising a MS-SQL database can scan a directory, parsing feature extraction files and by applying a Z score algorithm can detect regions of shared CNV from manually created true positive cases with a sensitivity of 100\% in a timely fashion.
 
 
 \section{Z score threshold to define a probe as abnormal}
-Analysis of the test cases suggest that using a Z score of between 3.55 and 4 to define a probe as abnormal would detect shared copy number variation without any false positive calls. 
+Analysis of the test cases suggest that using a threshold of between 3.55 and 4 to define a probe as abnormal would detect shared copy number variation without any false positive calls. 
 
 \paragraph*{}
-Conservatively applying the lower threshold to prospective arrays resulted in calls in 1 in 9 cases. 
+Conservatively applying the lower threshold to prospective arrays resulted in calls in 1 in 9 cases. However some cases contained a large number of calls which would increase the analysis burden. Further investigation into why some arrays contain a much higher number of calls and a strategy to predict and manage these arrays may be required.
+
+\section{The number of probes within true positive calls}
+The proportion of probes called as abnormal within the true positive calls was not assessed in detail as any call serves as a flag to prompt further investigation by the analyst who would further specify the exact shared CNV.
+\paragraph*{}
+Whilst the entire CNV may not be called, the calls may be spread out across the CNV, giving an indication of the shared CNV.
+\paragraph*{}
+Why so little of the large chromosome 22 deletion was not called should be investigated further.
 
 \section{Combining overlapping trios of abnormal probes}
-Trios of shared abnormal probes are combined in line with existing analysis protocols.
+A strategy has been created to combine trios of shared abnormal probes in line with existing analysis protocols.
 
-\section{Benign CNVs}
+\section{Benign CNV}
 It is expected that hybridisation partners would share one or more of the many known, common benign CNV regions. SID would correctly identify these regions as abnormal, however the above analysis would classify these calls as false positives. It may be worth excluding these regions from future specificity and sensitivity calculations
 \paragraph*{}
 Should SID be adopted by the clinical service stakeholder should be consulted to determine if calls within known benign CNV regions should be filtered out, or  if the experience of clinical scientists would make analysis of common calls trivial.
 
 
-\section{Calls smaller than 5 calls}
+\section{Calls smaller than 5 probes}
 The vast majority of false positive calls in the test set and prospective arrays contain less than 5 probes (Table \ref{tab:prosepectivecalls} and Figure \ref{fig:testcasesprobecount}). 
 \paragraph*{}
 The average signal intensities of probes within a true positive call is higher than that of a false positive call \ref{fig:testcasesaverageconfidenceZscore} so a secondary analysis, could be applied to further reduce false positive calls. 
 
 
-\section{Different thresholds for gain/loss}
+\section{Different thresholds for gain or loss}
 The proportional signal intensity change between diploid and triploid and diploid and monosomy is the same ($\pm$50\%). Therefore the Z score would be the same for monosomy and trisomy. 
 Similar numbers of false positive gains and losses suggest using the same threshold for losses and gains does not introduce bias however should further work identify a lack of sensitivity for either gain or loss separate thresholds could be applied.
 
@@ -89,18 +96,23 @@ Array runs occur at scheduled times during the week. SID scans a directory and c
 Alternatively the script could be set off manually by the array technician once the feature extraction process has completed. An SOP and training would be required.
 
 \subsection{Migration of database to the server}
-The database has not yet been migrated to the SQL server on the server.  Interacting across a network into a remote server may increase the time taken to process each sample and the stability of this connection tested.
+The database has not yet been migrated to the departmental MS-SQL server.  Interacting across a network into a remote server may increase the time taken to process each sample and the stability of this connection tested.
 \paragraph*{}
-If run overnight an increase in time may be tolerable however a process to identify and remedy interrupted or failed processing will be required. 
+An increase in time may be tolerable however a process to identify and remedy interrupted or failed processing will be required. 
 
 \section{Long term management of SID}
 \subsection{Unit test}
-After any changes are made to the script or database a unit test, utilising a truth set from a subset of the test set, should be performed to ensure no loss of function.
+After any changes are made to either the Python script or database a unit test, utilising a truth set from a subset of the test set, should be performed to ensure no loss of function.
 
+\subsection{Code review}
+The code and database schema should be version controlled using git and backed up remotely using github. 
+\paragraph*{}
+Any changes made to the SID python script should take place on the development branch and code reviewed in line with the departmental standard operating protocol (and best practice guidelines (unpublished)) before changes are adopted into the live code.
+ 
 \subsection{Recalculation of the reference range}
 The measured signal intensity can be affected following any maintenance or change to the microarray scanner. Following any maintenance a new reference range should be calculated, possibly using the first array run following maintenance. 
 \paragraph*{}
-This reference range should be created in a new table and the SID python script updated to apply the new reference and record the reference range applied in the feparams table.
+This reference range should be created in a new table and the SID python script updated to apply and record this in the Feparams table.
 
 \subsection{Truncating the database to maintain performance}
 Each array run consists of 48 or 96 arrays. As the run is processed and the Features table grows in size the time taken to process each array increases up to 7 fold.
@@ -121,23 +133,23 @@ Should SID be implemented and then become unavailable contingency plans include 
 SID will be incorporated to Trust IT`s existing database backup strategy, utilising a 3rd party software to perform daily backups, keeping the last three backups. 
 
 \subsection{Validation}
-ISO laboratory quality accreditation requires thorough validation of all tests and equipment. To validate SID 100 arrays can be analysed and 3 common CNVs assessed. The predictions made by SID can be compared to the signal intensities inspected manually on the array trace. The workload of manual assessing 300 regions is inline with validation of other tests within the department.
+ISO laboratory quality accreditation (ISO15189) requires thorough validation of all tests and equipment. To validate SID 100 arrays can be analysed and 3 common CNV regions assessed. The predictions made by SID can be compared to the signal intensities inspected manually on the array trace. The workload of manually assessing 300 regions is inline with validation of other tests within the department.
 
 \subsection{Documentation}
 Three documents are required to accompany SID:
 \paragraph*{}
-ISO accreditation requires a validation document which details the steps taken to confirm SID performs as expected..
+ISO accreditation requires a validation document which details the steps taken to confirm SID performs as expected.
 \paragraph*{}
 A SOP or user manual describes how SID is run and explaining some common error messages.
 \paragraph*{}
 A development manual would be aimed at members of the bioinformatics department who will be responsible for developing and maintaining the script and database.. This will describe in depth how SID works, dependencies and a change log. 
-\\
+\paragraph*{}
 This would also contain instructions to perform tasks which the user cannot perform, for example completely removing arrays to enable the array to be reprocessed and creation and adoption of new reference ranges.
 \paragraph*{}
-These documents would be stored in the controlled document management system (Q-Pulse) and on the laboratory wiki which hosts the current standard operating procedures for the microarray service.
+These documents would be stored in the controlled document management system (Q-Pulse) and on the laboratory wiki which hosts the current standard operating procedures for the array service.
 
 \section{Future considerations}
-\subsection{Array redesign/multiple array platforms}
+\subsection{Array redesign and multiple array designs}
 The department currently has three different array designs, the routine design, one high resolution array used only for specific cases and a legacy design. 
 \paragraph*{}
 Should SID replace phenotype mismatching SID should also be required to process these array files. Each array design would require a probeorder table and a reference range. The array design is contained within the filename. SID would need updating to extract this to apply the correct tables.

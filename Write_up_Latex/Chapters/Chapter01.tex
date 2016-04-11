@@ -29,7 +29,7 @@ As array CGH compares two samples, the use of a reference sample infers any CNV 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{./Figures/SharedImbalance.jpg}
-\caption{Three array traces are shown. Two arrays (Red and green traces) have the same three probe deletion on chromosome 6. The dark blue trace shows the two arrays hybridised together insilico. The log ratio appears completely normal and the deletion is not detected.}
+\caption[A trace showing how a shared imbalance would not be detected]{Three array traces are shown. Two arrays (Red and green traces) have the same three probe deletion on chromosome 6. The dark blue trace shows the two arrays hybridised together insilico. The log ratio appears completely normal and the deletion is not detected.}
 \label{fig:SharedImbalance}
 \end{figure}
 
@@ -39,7 +39,7 @@ The first challenge can be overcome by comparing the signal intensities of each 
 \paragraph*{}
 The second challenge is currently overcome with ``a careful consideration of patient referral information`` to reduce the risk of this occurring. Hybridisation partners are mismatched on phenotype \cite{ahn2010}. This assumes that patients with differing referral reasons eg heart vs renal defects will not have the same underlying CNV. Furthermore, CNV is rare and therefore the risk of two patients with the same CNV being hybridised together is low to start with, even without phenotype mismatching.
 
-\section{The rationale for the project}
+\section{Project Rationale}
 Financial pressures on the NHS are requiring increasingly innovative approaches. Adopting a patient to patient hybridisation approach halves the cost of performing the test \cite{ahn2010}.
 \paragraph*{}
 One fear preventing adoption of a patient to patient approach in a clinical setting is the fear of missing a diagnosis due to shared CNV in hybridisation partners \cite{dunlop2015}. 
@@ -88,7 +88,7 @@ At each probe a log ratio is calculated from the two signal intensities (equatio
 Log10\ \frac{Cy5\ signal\ intensity}{Cy3\ signal\ intensity}
 \end{equation} 
 
-\subsection{Feature extraction file}
+\subsection{Feature Extraction File}
 The result of feature extraction is one feature extraction file per array, a tab delimited text file of 10-15mb in size.
 \paragraph*{}
 The feature extraction file can be created in four levels of  verbosity: full, compact (default), QC and minimal. 
@@ -177,7 +177,7 @@ MongoDB \cite{mongodb_inc._mongodb_????} is an alternative database format to re
 \paragraph*{}
 MongoDB does not require relationships between tables and fields to be defined, removing the need for complex joins and enables documents with differing formats to be easily stored and compared. MongoDB is faster and easier to scale than relational databases.
 
-\subsection{Interacting with databases}
+\subsection{Python}
 Python is an object orientated programming language. Python programs can be written to perform a wide range of functions, such as parsing text files, performing complex mathematical and statistical calculations utilising additional modules or packages such as NumPy \cite{vanderwalt2011} and SciPy \cite{scipy_scipyorg_????}.
 \paragraph*{}
 Connectors are available (including MySQLdb \cite{dustman2014}, SQLAlchemy \cite{bayer_sqlalchemy_????}, PyODBC \cite{pyodbc_mkleehammer/pyodbc_????} and PyMongo \cite{pymongo_python_????}) enabling Python to interrogate and interact with databases.

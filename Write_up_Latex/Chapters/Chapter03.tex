@@ -16,7 +16,7 @@ However, reported regions may contain normal probes and whilst sensitivity is fa
 
 \begin{table}[]
 \centering
-\caption{A very high number of false positive calls was seen in the 86 training cases using a range of Z score thresholds.}
+\caption[Calls made in 86 training cases]{A very high number of false positive calls was seen in the 86 training cases using a range of Z score thresholds.}
 \label{tab:training_set_calls_86}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lccccccc@{}}
@@ -43,7 +43,7 @@ Visual inspection of the array traces and the raw data from these 5 arrays gave 
 \subsection{Comparison of true positive and false positive calls}
 \begin{table}[]
 \centering
-\caption{The calls made in 81 training cases using a range of Z score thresholds. The true positive call was missed in at least 5 cases across all thresholds, with a false positive call made in at least 1 in 4 cases. The number of false positive calls, and the average number of calls made decreased as the Z score threshold increased.}
+\caption[Calls made in 81 training cases after removal of outliers]{The calls made in 81 training cases using a range of Z score thresholds. The true positive call was missed in at least 5 cases across all thresholds, with a false positive call made in at least 1 in 4 cases. The number of false positive calls, and the average number of calls made decreased as the Z score threshold increased.}
 \label{tab:training_set_calls}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lccccccc@{}}
@@ -172,19 +172,32 @@ Number of false positive calls (max) & 48 (28)  & 9 (3)    & 1 (1)    & 0       
 }
 \end{table}
 
+\subsection{Proportion of CNV regions covered by calls}
+As shown in Figure \ref{fig:testcasestrueposcoverage} with the exception of 8 arrays with the 750 probe deletion on chromosome 22 (see Table \ref{tab:testset_calls}) at least 25\% of the probes were included within a call, with an average of 66\% of the CNV included within a call.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{./Figures/testcasestrueposcoverage}
+\caption[Test cases: the proportion of probes within reported CNV included by a call at a threshold of 3.55]{The proportion of probes within reported CNV included by a call at a threshold of 3.55.}
+\label{fig:testcasestrueposcoverage}
+\end{figure}
+
+
 \section{Prospective cases}
 121 routine arrays were processed. The expected results are unknown but the number of calls is indicative of the number of calls required to be assessed during analysis.
 \paragraph*{}
 Using the Z score threshold of 2.374 there were a significant number of calls, with more than 1 in 3 cases having calls to investigate. A threshold of 3.55 resulted in a call in at least 1 in 9 arrays (Table \ref{tab:prospectivecasecalls}).
+\paragraph*{}
+The maximum number of calls in a single array is quite high, with one array having 199 calls at a threshold of 3.55.
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\caption[Prospective cases: The prevalence of calls]{Prospective Cases: The proportion of the 121 arrays where a call has been made, and the total number of calls made across a range of thresholds. At a threshold of 3.55 12\% of arrays contain a call. Across these 14 cases there are 246 calls, of which 119 is made in a single case.}
 \label{tab:prospectivecasecalls}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|l|}
 \hline
-Z score & \begin{tabular}[c]{@{}l@{}}\% of arrays with a call\\ (n)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Total number of calls\\ (max calls in a singe array)\end{tabular} \\ \hline
+Z score & \begin{tabular}[c]{@{}l@{}}\% of arrays with a call\\ (n)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Total number of calls\\ (max calls in a single array)\end{tabular} \\ \hline
 2.374   & 37 (45)                                                                           & 1760 (555)                                                                                   \\ \hline
 3       & 16 (19)                                                                           & 591 (219)                                                                                    \\ \hline
 3.55    & 12 (14)                                                                           & 246 (119)                                                                                    \\ \hline
