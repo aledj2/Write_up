@@ -66,30 +66,31 @@
 \BOOKMARK [1][-]{section.3.4}{3.4 Performance of SID}{chapter.3}% 66
 \BOOKMARK [0][]{chapter.4}{4 Discussion}{}% 67
 \BOOKMARK [1][-]{section.4.1}{4.1 Suitability of SID}{chapter.4}% 68
-\BOOKMARK [1][-]{section.4.2}{4.2 Z score cutoff to define a probe as abnormal}{chapter.4}% 69
-\BOOKMARK [1][-]{section.4.3}{4.3 Benign CNVs}{chapter.4}% 70
-\BOOKMARK [1][-]{section.4.4}{4.4 Calls smaller than 5 calls}{chapter.4}% 71
-\BOOKMARK [1][-]{section.4.5}{4.5 Different cutoffs for gain/loss}{chapter.4}% 72
-\BOOKMARK [1][-]{section.4.6}{4.6 Alternative approaches to consecutive probes analysis}{chapter.4}% 73
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Larger sliding windows}{section.4.6}% 74
-\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Sliding window - Regions of interest}{section.4.6}% 75
-\BOOKMARK [1][-]{section.4.7}{4.7 Further work}{chapter.4}% 76
-\BOOKMARK [2][-]{subsection.4.7.1}{4.7.1 Sex Chromosomes}{section.4.7}% 77
-\BOOKMARK [2][-]{subsection.4.7.2}{4.7.2 Sample Type}{section.4.7}% 78
-\BOOKMARK [2][-]{subsection.4.7.3}{4.7.3 What happens when shared CNV is detected?}{section.4.7}% 79
-\BOOKMARK [2][-]{subsection.4.7.4}{4.7.4 Exporting results to LIMS}{section.4.7}% 80
-\BOOKMARK [2][-]{subsection.4.7.5}{4.7.5 Initiation of SID}{section.4.7}% 81
-\BOOKMARK [2][-]{subsection.4.7.6}{4.7.6 Migration of database to the server}{section.4.7}% 82
-\BOOKMARK [1][-]{section.4.8}{4.8 Long term management of SID}{chapter.4}% 83
-\BOOKMARK [2][-]{subsection.4.8.1}{4.8.1 Unit test}{section.4.8}% 84
-\BOOKMARK [2][-]{subsection.4.8.2}{4.8.2 Recalculation of the reference range}{section.4.8}% 85
-\BOOKMARK [2][-]{subsection.4.8.3}{4.8.3 Truncating the database to maintain performance}{section.4.8}% 86
-\BOOKMARK [2][-]{subsection.4.8.4}{4.8.4 Contingency plan}{section.4.8}% 87
-\BOOKMARK [2][-]{subsection.4.8.5}{4.8.5 Database backup}{section.4.8}% 88
-\BOOKMARK [2][-]{subsection.4.8.6}{4.8.6 Validation}{section.4.8}% 89
-\BOOKMARK [2][-]{subsection.4.8.7}{4.8.7 Documentation}{section.4.8}% 90
-\BOOKMARK [1][-]{section.4.9}{4.9 Future considerations}{chapter.4}% 91
-\BOOKMARK [2][-]{subsection.4.9.1}{4.9.1 Array redesign/multiple array platforms}{section.4.9}% 92
-\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 93
-\BOOKMARK [0][]{dummy.7}{Bibliography}{}% 94
-\BOOKMARK [0][]{colophon.0}{Colophon}{}% 95
+\BOOKMARK [1][-]{section.4.2}{4.2 Z score threshold to define a probe as abnormal}{chapter.4}% 69
+\BOOKMARK [1][-]{section.4.3}{4.3 Combining overlapping trios of abnormal probes}{chapter.4}% 70
+\BOOKMARK [1][-]{section.4.4}{4.4 Benign CNVs}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.5}{4.5 Calls smaller than 5 calls}{chapter.4}% 72
+\BOOKMARK [1][-]{section.4.6}{4.6 Different thresholds for gain/loss}{chapter.4}% 73
+\BOOKMARK [1][-]{section.4.7}{4.7 Alternative approaches to consecutive probes analysis}{chapter.4}% 74
+\BOOKMARK [2][-]{subsection.4.7.1}{4.7.1 Larger sliding windows}{section.4.7}% 75
+\BOOKMARK [2][-]{subsection.4.7.2}{4.7.2 Sliding window - Regions of interest}{section.4.7}% 76
+\BOOKMARK [1][-]{section.4.8}{4.8 Further work}{chapter.4}% 77
+\BOOKMARK [2][-]{subsection.4.8.1}{4.8.1 Sex Chromosomes}{section.4.8}% 78
+\BOOKMARK [2][-]{subsection.4.8.2}{4.8.2 Sample Type}{section.4.8}% 79
+\BOOKMARK [2][-]{subsection.4.8.3}{4.8.3 What happens when shared CNV is detected?}{section.4.8}% 80
+\BOOKMARK [2][-]{subsection.4.8.4}{4.8.4 Exporting results to LIMS}{section.4.8}% 81
+\BOOKMARK [2][-]{subsection.4.8.5}{4.8.5 Initiation of SID}{section.4.8}% 82
+\BOOKMARK [2][-]{subsection.4.8.6}{4.8.6 Migration of database to the server}{section.4.8}% 83
+\BOOKMARK [1][-]{section.4.9}{4.9 Long term management of SID}{chapter.4}% 84
+\BOOKMARK [2][-]{subsection.4.9.1}{4.9.1 Unit test}{section.4.9}% 85
+\BOOKMARK [2][-]{subsection.4.9.2}{4.9.2 Recalculation of the reference range}{section.4.9}% 86
+\BOOKMARK [2][-]{subsection.4.9.3}{4.9.3 Truncating the database to maintain performance}{section.4.9}% 87
+\BOOKMARK [2][-]{subsection.4.9.4}{4.9.4 Contingency plan}{section.4.9}% 88
+\BOOKMARK [2][-]{subsection.4.9.5}{4.9.5 Database backup}{section.4.9}% 89
+\BOOKMARK [2][-]{subsection.4.9.6}{4.9.6 Validation}{section.4.9}% 90
+\BOOKMARK [2][-]{subsection.4.9.7}{4.9.7 Documentation}{section.4.9}% 91
+\BOOKMARK [1][-]{section.4.10}{4.10 Future considerations}{chapter.4}% 92
+\BOOKMARK [2][-]{subsection.4.10.1}{4.10.1 Array redesign/multiple array platforms}{section.4.10}% 93
+\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 94
+\BOOKMARK [0][]{dummy.7}{Bibliography}{}% 95
+\BOOKMARK [0][]{colophon.0}{Colophon}{}% 96

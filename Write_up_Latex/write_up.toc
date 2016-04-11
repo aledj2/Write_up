@@ -71,30 +71,31 @@
 \contentsline {section}{\numberline {3.4}Performance of SID}{47}{section.3.4}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Discussion}}{50}{chapter.4}
 \contentsline {section}{\numberline {4.1}Suitability of SID}{50}{section.4.1}
-\contentsline {section}{\numberline {4.2}Z score cutoff to define a probe as abnormal}{50}{section.4.2}
-\contentsline {section}{\numberline {4.3}Benign CNVs}{50}{section.4.3}
-\contentsline {section}{\numberline {4.4}Calls smaller than 5 calls}{51}{section.4.4}
-\contentsline {section}{\numberline {4.5}Different cutoffs for gain/loss}{51}{section.4.5}
-\contentsline {section}{\numberline {4.6}Alternative approaches to consecutive probes analysis}{51}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Larger sliding windows}{51}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Sliding window - Regions of interest}{52}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Further work}{53}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Sex Chromosomes}{53}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Sample Type}{53}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}What happens when shared CNV is detected?}{53}{subsection.4.7.3}
-\contentsline {subsection}{\numberline {4.7.4}Exporting results to LIMS}{54}{subsection.4.7.4}
-\contentsline {subsection}{\numberline {4.7.5}Initiation of SID}{55}{subsection.4.7.5}
-\contentsline {subsection}{\numberline {4.7.6}Migration of database to the server}{55}{subsection.4.7.6}
-\contentsline {section}{\numberline {4.8}Long term management of SID}{55}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Unit test}{55}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Recalculation of the reference range}{56}{subsection.4.8.2}
-\contentsline {subsection}{\numberline {4.8.3}Truncating the database to maintain performance}{56}{subsection.4.8.3}
-\contentsline {subsection}{\numberline {4.8.4}Contingency plan}{57}{subsection.4.8.4}
-\contentsline {subsection}{\numberline {4.8.5}Database backup}{57}{subsection.4.8.5}
-\contentsline {subsection}{\numberline {4.8.6}Validation}{57}{subsection.4.8.6}
-\contentsline {subsection}{\numberline {4.8.7}Documentation}{57}{subsection.4.8.7}
-\contentsline {section}{\numberline {4.9}Future considerations}{58}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Array redesign/multiple array platforms}{58}{subsection.4.9.1}
+\contentsline {section}{\numberline {4.2}Z score threshold to define a probe as abnormal}{50}{section.4.2}
+\contentsline {section}{\numberline {4.3}Combining overlapping trios of abnormal probes}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}Benign CNVs}{50}{section.4.4}
+\contentsline {section}{\numberline {4.5}Calls smaller than 5 calls}{51}{section.4.5}
+\contentsline {section}{\numberline {4.6}Different thresholds for gain/loss}{51}{section.4.6}
+\contentsline {section}{\numberline {4.7}Alternative approaches to consecutive probes analysis}{51}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Larger sliding windows}{51}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Sliding window - Regions of interest}{52}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}Further work}{53}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Sex Chromosomes}{53}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Sample Type}{53}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}What happens when shared CNV is detected?}{53}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}Exporting results to LIMS}{54}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}Initiation of SID}{55}{subsection.4.8.5}
+\contentsline {subsection}{\numberline {4.8.6}Migration of database to the server}{55}{subsection.4.8.6}
+\contentsline {section}{\numberline {4.9}Long term management of SID}{55}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Unit test}{55}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Recalculation of the reference range}{56}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}Truncating the database to maintain performance}{56}{subsection.4.9.3}
+\contentsline {subsection}{\numberline {4.9.4}Contingency plan}{57}{subsection.4.9.4}
+\contentsline {subsection}{\numberline {4.9.5}Database backup}{57}{subsection.4.9.5}
+\contentsline {subsection}{\numberline {4.9.6}Validation}{57}{subsection.4.9.6}
+\contentsline {subsection}{\numberline {4.9.7}Documentation}{57}{subsection.4.9.7}
+\contentsline {section}{\numberline {4.10}Future considerations}{58}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Array redesign/multiple array platforms}{58}{subsection.4.10.1}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Conclusion}}{59}{chapter.5}
 \vspace {\beforebibskip }
 \contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{60}{dummy.7}

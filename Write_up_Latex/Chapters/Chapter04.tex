@@ -2,39 +2,45 @@
 \chapter{Discussion}\label{ch:Discussion} 
 %************************************************
 \section{Suitability of SID}
-The Shared Imbalance Detection (SID)) tool is capable of taking a feature extraction file and by applying a Z score algorithm can detect regions of shared CNV from manually created true positive cases with a sensitivity of 100\% in a timely fashion.
+The Shared Imbalance Detection (SID)) tool, written in Python and utilising a MS-SQL database capable of taking a feature extraction file and by applying a Z score algorithm can detect regions of shared CNV from manually created true positive cases with a sensitivity of 100\% in a timely fashion.
+
+
+\section{Z score threshold to define a probe as abnormal}
+Analysis of the test cases suggest that using a Z score of between 3.55 and 4 to define a probe as abnormal would detect shared copy number variation without any false positive calls. 
 
 \paragraph*{}
-SID meets the functional 
+Conservatively applying the lower threshold to prospective arrays resulted in calls in 1 in 9 cases. 
 
-\section{Z score cutoff to define a probe as abnormal}
-Analysis of the test cases suggest that using a Z score of between 3.55 and 4 to define a probe as abnormal would detect shared copy number variation without any false positive calls. However applying this threshold to prospective arrays, the same arrays used to create the test cases, resulted in calls in 1 in 10 cases. 
+\section{Combining overlapping trios of abnormal probes}
+Trios of shared abnormal probes are combined in line with existing analysis protocols.
 
 \section{Benign CNVs}
-It is expected that hybridisation partners would share one or more of many known, common benign CNVs. SID would correctly identify these regions as abnormal, however the above analysis would classify these calls as false positives.
+It is expected that hybridisation partners would share one or more of the many known, common benign CNV regions. SID would correctly identify these regions as abnormal, however the above analysis would classify these calls as false positives. It may be worth excluding these regions from future specificity and sensitivity calculations
 \paragraph*{}
-Should SID be adopted by the clinical service calls within known benign CNVs could be filtered out, or the experience of clinical scientists would make analysis of common calls trivial.
-\paragraph*{}
-It may be worth excluding these regions from future specificity and sensitivity calculations however no regions should be filtered when applied to live arrays.
+Should SID be adopted by the clinical service stakeholder should be consulted to determine if calls within known benign CNV regions should be filtered out, or  if the experience of clinical scientists would make analysis of common calls trivial.
+
 
 \section{Calls smaller than 5 calls}
-The vast majority of false positive calls contain less than 5 probes (table X showing breakdown of test cases and table of calls in prospective arrays). The average signal intensities of probes within a true positive call is higher than that of a false positive call (link to fig) so a secondary analysis, could be applied to further reduce false positive calls. 
+The vast majority of false positive calls in the test set and prospective arrays contain less than 5 probes (Table \ref{tab:prosepectivecalls} and Figure \ref{fig:testcasesprobecount}). 
+\paragraph*{}
+The average signal intensities of probes within a true positive call is higher than that of a false positive call \ref{fig:testcasesaverageconfidenceZscore} so a secondary analysis, could be applied to further reduce false positive calls. 
 
 
-\section{Different cutoffs for gain/loss}
-The proportional signal intensity change between diploid and triploid and diploid and monosomy is the same ($\pm$50\%). Therefore the Z score would be the same for a loss and a gain. 
-Similar numbers of false positive gains and losses (fig) suggest using the same cutoff for losses and gains does not introduce bias however should further work identify a lack of sensitivity for gain or loss separate cutoffs could be applied.
+\section{Different thresholds for gain/loss}
+The proportional signal intensity change between diploid and triploid and diploid and monosomy is the same ($\pm$50\%). Therefore the Z score would be the same for monosomy and trisomy. 
+Similar numbers of false positive gains and losses suggest using the same threshold for losses and gains does not introduce bias however should further work identify a lack of sensitivity for either gain or loss separate thresholds could be applied.
 
 \section{Alternative approaches to consecutive probes analysis}
 \subsection{Larger sliding windows}
-The Z score algorithm implemented differs to that suggested by Agilent \cite{agilenttechnologies2012}. Agilent suggest a sliding window and the proportion of probes outside a cutoff used to define a region as abnormal.
+The Z score algorithm implemented differs to that suggested by Agilent \cite{agilent_technologies_agilent_2011}. Agilent suggest a sliding window and the proportion of probes outside a threshold used to define a region as abnormal.
 
 In order to meet the functional specification of detection of three consecutive probes the sliding window must be very small, and the proportion of abnormal probes within a region would be very high. This may however result in a call which does not meet the specification (Figure \ref{fig:incorrectcallandalternatecomb}a)
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./Figures/incorrectcallandalternatecomb}
-\caption{a. b.}
+\caption[Classifying overlapping shared CNV]{Classifying overlapping shared CNV. a. Using a sliding window approach and measuring the proportion of probes outside a threshold may result in calls which do not meet the functional specification of three consecutive probes.\\
+b. The existing algorithm may miss clearly overlapping CNV where three consecutive abnormal probes are not shared}
 \label{fig:incorrectcallandalternatecomb}
 \end{figure}
 \paragraph*{}
@@ -45,31 +51,31 @@ The consecutive probe approach is designed to match the routine analysis approac
 \subsection{Sliding window - Regions of interest}
 A variation of the sliding window approach was investigated, using defined regions of interest (every CNV which has been reported more than twice) as a window. The same Z score analysis was performed and the proportion of abnormal probes within the region used to determine if a region is abnormal or not.
 \paragraph*{}
-Despite this approach being targeted to known abnormalities and the potential to expand the list of regions this approach is more limited than the consecutive probe approach so was not pursued.
+Despite this approach being targeted to known clinically relevant CNV and the potential to expand the list of regions this approach is more limited than the consecutive probe approach so was not pursued.
 
 \section{Further work}
 \subsection{Sex Chromosomes}
-Further work is required to include sex chromosomes in the analysis. The gender of the sample affects the signal intensities of probes on the sex chromosomes. To identify CNV on the sex chromosomes a gender specific reference range is required. The average signal intensities across the X and Y chromosomes could determine gender and therefore which reference range should be applied.
+Further work is required to include sex chromosomes in the analysis. The gender of the sample affects the signal intensities of probes on the sex chromosomes. To identify CNV on the sex chromosomes a gender specific reference range is required. The average signal intensities across non pseudoautosomal regions of the X and Y chromosomes could determine gender and therefore which reference range should be applied.
 \subsection{Sample Type}
-This project has only assessed postnatal blood samples. The array service also processes prenatal, solid tissue and preimplantation genetic diagnosis samples, which have variable resolution and performance due to the quality of the sample. 
+This project has only assessed postnatal blood samples. The array service also processes prenatal, solid tissue and \ac{PGD} samples, which have variable resolution and performance due to the quality of the sample. 
 \paragraph*{}
-Differing analysis strategies and Z score cutoffs would be required for each sample type in line with existing analysis approaches in addition to a method for identifying the sample type of each array.
+Differing analysis strategies and Z score thresholds would be required for each sample type in line with existing analysis approaches in addition to a method for specifying the sample type of each array.
 \subsection{What happens when shared CNV is detected?}
-Once shared CNV is detected further investigations are required. The level of investigation required would dictate the acceptable levels of specificity of SID. If a thorough investigation is required the time and cost incurred would negate any savings brought by replacing phenotype mismatching with SID.
+Once shared CNV is detected further investigations is required. The level of investigation required would dictate the acceptable levels of specificity of SID. If a thorough investigation is required the time and cost incurred would negate any savings brought by replacing phenotype mismatching with SID.
 \paragraph*{}
-The signal intensities can be examined within the analysis software which would confirm or deny the presence of CNV. This practise is in line with current analysis methods when identifying if an aberration is a gain in one hybridisation partner or a loss in the other. However having \textgreater 100 calls on an array would make this approach unfeasible.
+The signal intensities can be examined within the analysis software which would confirm or deny the presence of CNV. This practise is in line with current analysis methods when identifying if an aberration is a duplication in one hybridisation partner or a deletion in the other. However having \textgreater 100 calls on a single array would make this approach unfeasible.
 \paragraph*{}
 Another potential approach is EvE, a tool which allows post hoc hybridisation of samples. Each sample could be independently compared against another sample, such as a reference control, to see if CNV is present. 
 \paragraph*{}
 EvE takes about one minute to run and the analysis could be performed in less than 10 minutes. However should this be required routinely any time savings would be diminished.
 EvE has been validated for use with the PGD service but has not yet been validated for use with postnatal blood samples.
 \paragraph*{}
-An extreme approach is to re-run the sample against different hybridisation partners. If this is the case the specificity must be well understood to avoid a large number of samples being repeated, removing any cost savings.
+An extreme approach is to re-run the samples against different hybridisation partners. If this is the case the specificity must be well understood to avoid a large number of samples being repeated, removing any cost savings.
 \paragraph*{}
 The approach taken would require a thorough consultation with clinical scientists and bioinformaticians,
 
 \subsection{Exporting results to LIMS}
-The SID database will be a separate database to the departmental LIMS database, hosted on the same server.
+The SID database will be a separate database to the departmental LIMS database, hosted on the same MS-SQL server.
 \paragraph*{}
 A function could therefore be added to the end of SID to connect to the LIMS system and export the results directly to the LIMS system. The filename can be used to link to the two patient records using an existing query.
 \paragraph*{}
@@ -83,7 +89,7 @@ Array runs occur at scheduled times during the week. SID scans a directory and c
 Alternatively the script could be set off manually by the array technician once the feature extraction process has completed. An SOP and training would be required.
 
 \subsection{Migration of database to the server}
-The database has not been migrated to the SQL server on the server.  Interacting across a network into a remote server may increase the time taken to process each sample and the stability of this connection tested.
+The database has not yet been migrated to the SQL server on the server.  Interacting across a network into a remote server may increase the time taken to process each sample and the stability of this connection tested.
 \paragraph*{}
 If run overnight an increase in time may be tolerable however a process to identify and remedy interrupted or failed processing will be required. 
 
