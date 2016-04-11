@@ -2,5 +2,29 @@
 \deactivateaddvspace 
 \select@language {american}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Three array traces are shown. Two arrays (Red and green traces) have the same three probe deletion on chromosome 6. The dark blue trace shows the two arrays hybridised together insilico. The log ratio appears completely normal and the deletion is not detected.\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {2}{\ignorespaces A scanned 8 x 60k array}}{20}{figure.caption.14}
+\contentsline {figure}{\numberline {3}{\ignorespaces Circular binary segmentation algorithm\relax }}{23}{figure.caption.19}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4}{\ignorespaces The agile software design methodology promotes regular testing to ensure the design is fit for purpose\relax }}{29}{figure.caption.25}
+\contentsline {figure}{\numberline {5}{\ignorespaces The SID database schema. Five tables are required. \^ denotes an indexed field, * denotes a primary key. Lines denotte how tables are joined.\relax }}{30}{figure.caption.26}
+\contentsline {figure}{\numberline {6}{\ignorespaces A visual representation of the SID python script}}{33}{figure.caption.27}
+\contentsline {figure}{\numberline {7}{\ignorespaces The distribution of signal intensities from 30 arrays}}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {8}{\ignorespaces The normal distribution}}{36}{figure.caption.29}
+\contentsline {figure}{\numberline {9}{\ignorespaces Consecutive probe analysis algorithm}}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {10}{\ignorespaces Trios of abnormal probes are combined into a single call }}{38}{figure.caption.31}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11}{\ignorespaces The number of probes classified as normal within known regions of CNV at a range of Z score thresholds}}{41}{figure.caption.34}
+\contentsline {figure}{\numberline {12}{\ignorespaces Training cases: False positive calls are smaller than true positive calls.\relax }}{43}{figure.caption.37}
+\contentsline {figure}{\numberline {13}{\ignorespaces Training cases: The lowest confidence Z score within each call at a threshold of 2.374}}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {14}{\ignorespaces Training cases: The average Z score of probes within calls at a threshold of 2.374}}{45}{figure.caption.39}
+\contentsline {figure}{\numberline {15}{\ignorespaces Training cases: The lowest confidence probe within calls at a threshold of 3.55}}{46}{figure.caption.40}
+\contentsline {figure}{\numberline {16}{\ignorespaces Training cases:Average Z scores for calls made with a threshold of 3.55}}{47}{figure.caption.41}
+\contentsline {figure}{\numberline {17}{\ignorespaces Test cases: The average Z score at a threshold of 2.374}}{48}{figure.caption.42}
+\contentsline {figure}{\numberline {18}{\ignorespaces Test cases: The highest confidence probe within calls made at a threshold of 2.374}}{48}{figure.caption.43}
+\contentsline {figure}{\numberline {19}{\ignorespaces Test cases: The lowest confidence probe within calls at a threshold of 2.374}}{49}{figure.caption.44}
+\contentsline {figure}{\numberline {20}{\ignorespaces Test cases: The number of probes within calls made at a threshold of 2.374}}{49}{figure.caption.45}
+\contentsline {figure}{\numberline {21}{\ignorespaces Prospective cases: The number of calls per array across a range of threshold in 121 prospective cases\relax }}{49}{figure.caption.48}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {22}{\ignorespaces a. b.\relax }}{52}{figure.caption.50}
 \addvspace {10\p@ }

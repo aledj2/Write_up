@@ -1,45 +1,186 @@
-\begin{thebibliography}{4}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{10}
 
-\bibitem[Ahn et~al.(2010)Ahn, Mann, Walsh, Shehab, Hoang, Docherty, Mohammed,
-  and Mackie~Ogilvie]{ahn2010}
+\bibitem{ahn2010}
 Joo~Wook Ahn, Kathy Mann, Sally Walsh, Marwa Shehab, Sarah Hoang, Zoe Docherty,
   Shehla Mohammed, and Caroline Mackie~Ogilvie.
 \newblock Validation and implementation of array comparative genomic
   hybridisation as a first line test in place of postnatal karyotyping for
   genome imbalance.
-\newblock \emph{Molecular Cytogenetics}, 3:\penalty0 9, April 2010.
-\newblock ISSN 1755-8166.
-\newblock \doi{10.1186/1755-8166-3-9}.
-\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2885406/}.
+\newblock {\em Molecular Cytogenetics}, 3:9, April 2010.
 \newblock {PMID:} 20398301 {PMCID:} {PMC2885406}.
 
-\bibitem[Hupe(2004)]{hupe2004}
+\bibitem{hupe2004}
 Phillipe Hupe.
 \newblock {GLAD-Introduction}.
 \newblock http://bioinfo-out.curie.fr/projects/glad/node2.html, November 2004.
-\newblock URL \url{http://bioinfo-out.curie.fr/projects/glad/node2.html}.
 
-\bibitem[Roy and Motsinger~Reif(2013)]{roy2013}
+\bibitem{roy2013}
 Siddharth Roy and Alison Motsinger~Reif.
 \newblock Evaluation of calling algorithms for {array-CGH}.
-\newblock \emph{Frontiers in Genetics}, 4, October 2013.
-\newblock ISSN 1664-8021.
-\newblock \doi{10.3389/fgene.2013.00217}.
-\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3829466/}.
+\newblock {\em Frontiers in Genetics}, 4, October 2013.
 \newblock {PMID:} 24298279 {PMCID:} {PMC3829466}.
 
-\bibitem[Zhang et~al.(2009)Zhang, Gu, Hurles, and Lupski]{zhang2009}
+\bibitem{zhang2009}
 Feng Zhang, Wenli Gu, Matthew~E. Hurles, and James~R. Lupski.
 \newblock Copy number variation in human health, disease, and evolution.
-\newblock \emph{Annual Review of Genomics and Human Genetics}, 10\penalty0
-  (1):\penalty0 451--481, 2009.
-\newblock \doi{10.1146/annurev.genom.9.081307.164217}.
-\newblock URL \url{http://dx.doi.org/10.1146/annurev.genom.9.081307.164217}.
+\newblock {\em Annual Review of Genomics and Human Genetics}, 10(1):451--481,
+  2009.
 \newblock {PMID:} 19715442.
+
+\bibitem{ahn2013}
+Joo~Wook Ahn, Susan Bint, Anne Bergbaum, Kathy Mann, Richard~P Hall, and
+  Caroline~Mackie Ogilvie.
+\newblock Array {CGH} as a first line diagnostic test in place of karyotyping
+  for postnatal referrals - results from four years' clinical application for
+  over 8,700 patients.
+\newblock {\em Molecular Cytogenetics}, 6:16, April 2013.
+\newblock {PMID:} 23560982 {PMCID:} {PMC3632487}.
+
+\bibitem{jordan_microarrays_2012}
+Bertrand Jordan, editor.
+\newblock {\em Microarrays in diagnostics and biomarker development: current
+  and future applications}.
+\newblock Springer, Heidelberg ; New York, 2012.
+
+\bibitem{dunlop2015}
+John Dunlop and Jake Miller.
+\newblock Why haven't you adopted a patient to patient approach?, July 2015.
+
+\bibitem{joowook_ahn_frequency_2015}
+{JooWook Ahn}.
+\newblock The frequency of abnormalities suggest a 1 in 6000 chance of two
+  patients randomly having the same imbalance, June 2015.
+
+\bibitem{agilenttechnologies_microarrays}
+Agilent Technologies.
+\newblock {CGH} \& {CGH+SNP} microarrays.
+\newblock
+  {http://www.genomics.agilent.com/en/CGH-CGH-SNP-Microarrays/;jsessionid=Hz91Jt8CfVWDlHljTS2ytPCJG1R3P9xvNZqtS8JrtxP0wrThNLbH!867729385?pgid=AG-PG-9},
+  2016.
+
+\bibitem{agilenttechnologies_earray}
+Agilent Technologies.
+\newblock {eArray}.
+\newblock https://earray.chem.agilent.com/earray/, 2016.
+
+\bibitem{agilent_technologies_agilent_2011}
+{Agilent Technologies}.
+\newblock Agilent {CytoGenomics} 2.0 {Reference} {Guide}, 2011.
+
+\bibitem{venkatraman2007}
+E.~S. Venkatraman and Adam~B. Olshen.
+\newblock A faster circular binary segmentation algorithm for the analysis of
+  array {CGH} data.
+\newblock {\em Bioinformatics {(Oxford}, England)}, 23(6):657--663, March 2007.
+\newblock {PMID:} 17234643.
+
+\bibitem{willenbrock2005}
+Hanni Willenbrock and Jane Fridlyand.
+\newblock A comparison study: applying segmentation to array {CGH} data for
+  downstream analyses.
+\newblock {\em Bioinformatics}, 21(22):4084--4091, November 2005.
+\newblock {PMID:} 16159913.
+
+\bibitem{lai2005}
+Weil~R. Lai, Mark~D. Johnson, Raju Kucherlapati, and Peter~J. Park.
+\newblock Comparative analysis of algorithms for identifying amplifications and
+  deletions in array {CGH} data.
+\newblock {\em Bioinformatics {(Oxford}, England)}, 21(19):3763, October 2005.
+\newblock {PMID:} 16081473 {PMCID:} {PMC2819184}.
+
+\bibitem{niu_screening_2012}
+Yue~S. Niu and Heping Zhang.
+\newblock {THE} {SCREENING} {AND} {RANKING} {ALGORITHM} {TO} {DETECT} {DNA}
+  {COPY} {NUMBER} {VARIATIONS}.
+\newblock {\em The annals of applied statistics}, 6(3):1306--1326, September
+  2012.
+
+\bibitem{mongodb_inc._mongodb_????}
+{MongoDB, Inc.}
+\newblock {MongoDB}.
+
+\bibitem{vanderwalt2011}
+S.~van~der Walt, {S.C.} Colbert, and G.~Varoquaux.
+\newblock The {NumPy} array: A structure for efficient numerical computation.
+\newblock {\em Computing in Science Engineering}, 13(2):22--30, March 2011.
+
+\bibitem{scipy_scipyorg_????}
+{SciPy}.
+\newblock Scipy.org.
+
+\bibitem{dustman2014}
+Andy Dustman.
+\newblock {MySQLdb1}.
+\newblock {https://github.com/farcepest/MySQLdb1}, January 2014.
+
+\bibitem{bayer_sqlalchemy_????}
+Michael Bayer.
+\newblock {SQLAlchemy}.
+
+\bibitem{pyodbc_mkleehammer/pyodbc_????}
+{pyodbc}.
+\newblock mkleehammer/pyodbc.
+
+\bibitem{pymongo_python_????}
+{PyMongo}.
+\newblock {Python} {Driver} {(PyMongo)} {Getting} {Started} {With} {MongoDB}
+  3.0.4.
+
+\bibitem{rfoundationforstatisticalcomputing2014}
+R~Foundation for Statistical~Computing.
+\newblock R: A language and environment for statistical computing, 2014.
+
+\bibitem{huber_orchestrating_2015}
+Wolfgang Huber, Vincent~J Carey, Robert Gentleman, Simon Anders, Marc Carlson,
+  Benilton~S Carvalho, Hector~Corrada Bravo, Sean Davis, Laurent Gatto, Thomas
+  Girke, Raphael Gottardo, Florian Hahne, Kasper~D Hansen, Rafael~A Irizarry,
+  Michael Lawrence, Michael~I Love, James MacDonald, Valerie Obenchain,
+  Andrzej~K Oles, Herve Pages, Alejandro Reyes, Paul Shannon, Gordon~K Smyth,
+  Dan Tenenbaum, Levi Waldron, and Martin Morgan.
+\newblock Orchestrating high-throughput genomic analysis with {Bioconductor}.
+\newblock {\em Nature Methods}, 12(2):115--121, January 2015.
+
+\bibitem{Sechan2015}
+Venkatraman~E. Sechan and Adam Olshen.
+\newblock Dnacopy : Dna copy number data analysis.
+
+\bibitem{mysql_mysql_????}
+{MySQL}.
+\newblock {MySQL} {Community} {Server}.
+
+\bibitem{_sql_????}
+{SQL} {Server} {Express} {Edition} {Microsoft}.
+
+\bibitem{_microsoft_????}
+Microsoft {SQL} {Server} {Migration} {Assistant} v5.3 {for} {MySQL}.
+
+\bibitem{heidisql_heidisql_2016}
+{HeidiSQL}.
+\newblock {HeidiSQL} - {MySQL}, {MSSQL} and {PostgreSQL} made easy, 2016.
+
+\bibitem{python_software_foundation_python_2010}
+{Python Software Foundation}.
+\newblock Python {Language} {Reference}, version 2.7, July 2010.
+
+\bibitem{continuum_why_2016}
+{Continuum}.
+\newblock Why {Anaconda}?, April 2016.
+
+\bibitem{the_eclipse_foundation_eclipse_????}
+{The Eclipse Foundation}.
+\newblock Eclipse {IDE}.
+
+\bibitem{pydev_python_????}
+{PyDev}.
+\newblock Python {IDE} for {Eclipse}.
+
+\bibitem{pylint_code_????}
+{Pylint}.
+\newblock Code analysis for {Python}.
+
+\bibitem{agilenttechnologies2012}
+Agilent Technologies.
+\newblock Aglient workbench - {CGH} interactive analysis user guide, April
+  2012.
 
 \end{thebibliography}

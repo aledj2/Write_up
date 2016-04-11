@@ -1,23 +1,60 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: write_up.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: write_up.aux
 A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
 A level-1 auxiliary file: FrontBackmatter/Contents.aux
-A level-1 auxiliary file: FrontBackMatter/ListOfFigures.aux
-A level-1 auxiliary file: FrontBackMatter/ListOfTables.aux
 A level-1 auxiliary file: FrontBackmatter/Dedication.aux
 A level-1 auxiliary file: FrontBackmatter/Abstract.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 A level-1 auxiliary file: FrontBackmatter/IntellectualProperty.aux
 A level-1 auxiliary file: FrontBackmatter/Acknowledgments.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
-A level-1 auxiliary file: FrontBackmatter/Appendix.aux
+A level-1 auxiliary file: Chapters/Chapter02.aux
+A level-1 auxiliary file: Chapters/Chapter03.aux
+A level-1 auxiliary file: Chapters/Chapter04.aux
+A level-1 auxiliary file: Chapters/Chapter05.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
-The style file: plainnat.bst
+The style file: unsrt.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 Database file #1: Bibliography.bib
-I was expecting a `,' or a `}'---line 25 of file Bibliography.bib
- :  
- :  note = {R package version 1.40.0},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "agilenttechnologies????"
-(There was 1 error message)
+You've used 35 entries,
+            1791 wiz_defined-function locations,
+            616 strings with 8876 characters,
+and the built_in function-call counts, 5745 in all, are:
+= -- 422
+> -- 300
+< -- 0
++ -- 119
+- -- 84
+* -- 295
+:= -- 907
+add.period$ -- 90
+call.type$ -- 35
+change.case$ -- 34
+chr.to.int$ -- 0
+cite$ -- 35
+duplicate$ -- 220
+empty$ -- 668
+format.name$ -- 84
+if$ -- 1272
+int.to.chr$ -- 0
+int.to.str$ -- 35
+missing$ -- 11
+newline$ -- 163
+num.names$ -- 34
+pop$ -- 150
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 168
+stack$ -- 0
+substring$ -- 177
+swap$ -- 35
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 48
+width$ -- 37
+write$ -- 321
