@@ -9,8 +9,14 @@
 \let\cleardoublepage\relax
 
 \chapter*{Abstract}
-Short summary of the contents\dots
-
+\textbf{Introduction:} Array CGH is a well established technique to detect copy number variation (CNV) in diagnostic genetic laboratories. To reduce the cost of the array service Viapath have adopted a patient to patient hybridisation approach, halving the costs of consumables. This however, introduces additional challenges, significantly that a CNV may be missed if present in both patients. This is currently mediated by manually selecting hybridised partners based on phenotype, a time consuming process.
+\\ The aim of this project is to investigate a tool which can detect CNV independent of the hybridisation partner, enabling shared CNV to be detected.
+\\ 
+\textbf{Methods:} Two sets of true positive arrays were created by manually editing the feature extraction files. The shared imbalance detection (SID) tool was created, consisting of a database and Python script. SID parses feature extraction files, performing a Z score analysis on the signal intensity of each probe from a reference range. Consecutive abnormal probes form calls which if present in both hybridisation partners are reported as shared CNV.
+\\
+\textbf{Results:}A range of Z score thresholds were applied to define a probe as normal or abnormal. 94\% of cases in a training set of 81 arrays had a call in the expected region. The test set of 69 arrays had calls in the expected region in 100\% of cases with no false positive calls with thresholds between 3.55 and 4. Applying the same thresholds to 121 prospective arrays resulted in calls made in between 10\% and 12\% of cases.
+\\
+\textbf{Discussion:}SID is capable of processing array files in a timely manner and can detect shared CNV in line with the departmental analysis protocols. Long term management and further work, including incorporating analysis of the sex chromosomes and validation and implementation the service is described.
 
 \vfill
 

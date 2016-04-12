@@ -55,11 +55,11 @@ The MySQLdb python connector was replaced by PyODBC MSSQL connector \cite{pyodbc
 Database development was performed using the HeidiSQL client (v9.1)\cite{heidisql_heidisql_2016}.
 
 \section{SID - Database design}
-To minimise processing time fields from the feature extraction file imported to the database was kept to a minimum. The database is designed in third normalised form, storing numeric keys to prevent anomalies and to maximise the performance of joins. Array wide values are stored a single time in the feparams table, not for each feature.
+To minimise processing time fields from the feature extraction file imported to the database was kept to a minimum. The database is designed in third normalised form, storing numeric keys to prevent anomalies and to maximise the performance of joins. Array wide values are stored a single time in the feparam table, not for each feature.
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{./Figures/SIDdbschema-simple}
-\caption[The SID database schema]{The SID database schema. Five tables are required. \^ denotes an indexed field, * denotes a primary key. Lines denotte how tables are joined.}
+\caption[The SID database schema]{The SID database schema. Five tables are required.\string^ denotes an indexed field, * denotes a primary key. Lines denote how tables are joined.}
 \label{fig:SIDdbschema-simple}
 \end{figure}
 
@@ -81,9 +81,9 @@ Any columns used to join table are also indexed to improve performance.
 
 \section{Importing and Processing Feature Extraction Files}
 \subsection{Python}
-Feature extraction files were parsed using Python (v2.7)\cite{python_software_foundation_python_2010}. The Anaconda Python distribution (v2.3.0) \cite{continuum_why_2016} was selected to make use of the preinstalled packages such as NumPy, SciPy and math packages. The package manager Conda was used to install the MySQLdb package (mysql-python v1.2.5)\cite{dustman2014} to access the MySQL database from python. 
+Feature extraction files were parsed using Python (v2.7)\cite{python_software_foundation_python_2010}. The Anaconda Python distribution (v2.3.0) \cite{continuum_why_2016} was selected to make use of the pre-installed packages such as NumPy, SciPy and math packages. The package manager Conda was used to install the MySQLdb package (mysql-python v1.2.5)\cite{dustman2014} to access the MySQL database from python. 
 \paragraph*{}
-The Eclipse IDE (Luna v 4.4.1) \cite{the_eclipse_foundation_eclipse_????} was used with the PyDev package (v 3.9.0) \cite{pydev_python_????} to develop and run Python scripts.
+The Eclipse \ac{IDE} (Luna v 4.4.1) \cite{the_eclipse_foundation_eclipse_????} was used with the PyDev package (v 3.9.0) \cite{pydev_python_????} to develop and run Python scripts.
 \paragraph*{}
 The Pylint Python package (v 1.4.2) \cite{pylint_code_????} and autopep8 were used within Eclipse to apply the local Python style guide to the code.
 
@@ -135,7 +135,7 @@ The Z score is a measure of how many standard deviations from the mean the signa
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{./Figures/normaldist}
-\caption[The normal distribution]{Cutoffs can be aplied to define probes as abnormal or normal. A more extreme threshold will define fewer probes as abnormal.}
+\caption[The normal distribution]{Thresholds can be applied to define probes as abnormal or normal. A more extreme threshold will define fewer probes as abnormal.}
 \label{fig:normaldist}
 \end{figure}
 
@@ -172,7 +172,7 @@ SID underwent three stages of development.
 \subsection{Training cases}
 A Python script was written to create true positive feature extraction files using feature extraction files with reported aberrations. 
 \paragraph*{}
-Probes within the reported region were identified and a new FE file was created where the Cy5 signal intensity was replaced by the Cy3 signal intensity. This was repeated replacing the Cy3 signal intensity with the Cy5 signal intensity.
+Probes within the reported region were identified and a new feature extraction file was created where the Cy5 signal intensity was replaced by the Cy3 signal intensity. This was repeated replacing the Cy3 signal intensity with the Cy5 signal intensity.
 \paragraph*{}
 The script created one true positive, with signal intensities representing an aberration in both hybridisation partners and one true negative file where both partners have normal signal intensities.
 \paragraph*{}
@@ -184,7 +184,7 @@ To ensure the signal intensities would be compared against the correct reference
 EvE, a Python script used for the post-hoc hybridisation of arrays in \ac{PGD} cases, parses two feature extraction files, extracting all measurements for both samples on both arrays, and creates a new feature extraction file where the Cy3 measurements are populated from the Cy3 sample from the first file and the Cy5 measurements from the Cy5 sample from the second file.
 
 \paragraph*{}
-The test cases were reported to have one of the most commonly reported CNVs, representing a range of sizes and loss and gains \ref{tab:testset_calls}.
+The test cases were reported to have one of the most commonly reported CNV, representing a range of sizes and loss and gains \ref{tab:testset_calls}.
 
 \begin{table}
 \caption{Cases with one of the 9 most common CNV were used to create the test set}
