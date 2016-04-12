@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.31)  12 APR 2016 18:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.31)  12 APR 2016 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1185,24 +1185,24 @@ Package microtype Info: Loading generic settings for font family
 
 
 (./FrontBackmatter/IntellectualProperty.tex
-Overfull \hbox (1.7738pt too wide) in paragraph at lines 16--17
+Overfull \hbox (1.7738pt too wide) in paragraph at lines 18--19
 \T1/pplj/m/n/12 in the Uni-ver-sity IP Pol-icy (see http://documents.manche-
  []
 
 
-Overfull \hbox (19.41454pt too wide) in paragraph at lines 16--17
+Overfull \hbox (19.41454pt too wide) in paragraph at lines 18--19
 \T1/pplj/m/n/12 http://www.manchester.ac.uk/library/aboutus/regulations)
  []
 
-[13
+) [13
 
 
 
 
-]) [14]
+]
 \openout2 = `FrontBackmatter/Acknowledgments.aux'.
 
- (./FrontBackmatter/Acknowledgments.tex) [15
+ (./FrontBackmatter/Acknowledgments.tex) [14
 
 
 
@@ -1211,8 +1211,7 @@ Overfull \hbox (19.41454pt too wide) in paragraph at lines 16--17
 ]
 \openout2 = `Chapters/Chapter01.aux'.
 
-
-(./Chapters/Chapter01.tex
+ (./Chapters/Chapter01.tex
 Chapter 1.
 Package acronym Info: Label `acro:CGH' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
@@ -1228,7 +1227,7 @@ Package acronym Info: Label `acro:Cy3' newly defined as it shall be overridden
 although it is yet undefined on input line 10.
 Package acronym Info: Label `acro:CNV' newly defined as it shall be overridden
 although it is yet undefined on input line 16.
-[16
+[15
 
 
 
@@ -1240,19 +1239,19 @@ Overfull \hbox (1.78796pt too wide) in paragraph at lines 18--19
 thod
  []
 
-[17] <./Figures/SharedImbalance.jpg, id=698, 731.73375pt x 204.765pt>
+[16] <./Figures/SharedImbalance.jpg, id=694, 731.73375pt x 204.765pt>
 File: ./Figures/SharedImbalance.jpg Graphic file (type jpg)
 
 <use ./Figures/SharedImbalance.jpg>
 Package pdftex.def Info: ./Figures/SharedImbalance.jpg used on input line 31.
 (pdftex.def)             Requested size: 336.0pt x 94.0243pt.
- [18 <./Figures/SharedImbalance.jpg>]
+ [17 <./Figures/SharedImbalance.jpg>]
 Overfull \hbox (0.95442pt too wide) in paragraph at lines 51--52
 [] [][] \T1/pplj/m/n/12 The chance of two pa-tients hav-ing the same aber-ra-ti
 on (with-
  []
 
-[19] <./Figures/microarrayslide.png, id=718, 507.8975pt x 171.64125pt>
+[18] <./Figures/microarrayslide.png, id=713, 507.8975pt x 171.64125pt>
 File: ./Figures/microarrayslide.png Graphic file (type png)
 
 <use ./Figures/microarrayslide.png>
@@ -1260,7 +1259,7 @@ Package pdftex.def Info: ./Figures/microarrayslide.png used on input line 78.
 (pdftex.def)             Requested size: 336.0pt x 113.55331pt.
 Package acronym Info: Label `acro:AFU' newly defined as it shall be overridden
 although it is yet undefined on input line 84.
- [20] [21 <./Figures/microarrayslide.png>]
+ [19] [20 <./Figures/microarrayslide.png>]
 Package acronym Info: Label `acro:CBS' newly defined as it shall be overridden
 although it is yet undefined on input line 110.
 Package acronym Info: Label `acro:ADM' newly defined as it shall be overridden
@@ -1268,13 +1267,13 @@ although it is yet undefined on input line 110.
 Package acronym Info: Label `acro:HMM' newly defined as it shall be overridden
 although it is yet undefined on input line 110.
 
-[22] [23] <./Figures/CBS.png, id=761, 554.07pt x 403.5075pt>
+[21] [22] <./Figures/CBS.png, id=757, 554.07pt x 403.5075pt>
 File: ./Figures/CBS.png Graphic file (type png)
 
 <use ./Figures/CBS.png>
 Package pdftex.def Info: ./Figures/CBS.png used on input line 138.
 (pdftex.def)             Requested size: 336.0pt x 244.6923pt.
- [24 <./Figures/CBS.png>]
+ [23 <./Figures/CBS.png>]
 Overfull \hbox (0.7546pt too wide) in paragraph at lines 154--155
 [] [][] \T1/pplj/m/n/12 The HMM is then ap-plied. The forward-backward al-go-ri
 thm
@@ -1286,7 +1285,7 @@ Overfull \hbox (5.66905pt too wide) in paragraph at lines 154--155
  states. Baum-
  []
 
-[25]
+[24]
 Overfull \hbox (15.63594pt too wide) in paragraph at lines 159--160
 \T1/pplj/m/n/12 Each al-go-rithm per-forms dif-fer-ently de-pend-ing on the sig
 -nal:noise
@@ -1309,7 +1308,7 @@ Overfull \hbox (3.60646pt too wide) in paragraph at lines 171--172
 nal Database Man-
  []
 
-[26]
+[25]
 Package acronym Info: Label `acro:SQL' newly defined as it shall be overridden
 although it is yet undefined on input line 173.
 
@@ -1318,7 +1317,7 @@ Overfull \hbox (25.36324pt too wide) in paragraph at lines 183--184
 SQLAlchemy
  []
 
-) [27]
+) [26]
 \openout2 = `Chapters/Chapter02.aux'.
 
  (./Chapters/Chapter02.tex
@@ -1329,7 +1328,7 @@ LaTeX Font Info:    Try loading font information for TS1+pplj on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-) [28
+) [27
 
 
 
@@ -1337,13 +1336,13 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 Package acronym Info: Label `acro:SOP' newly defined as it shall be overridden
 although it is yet undefined on input line 28.
 
-<./Figures/Agile.png, id=830, 523.9575pt x 135.50626pt>
+<./Figures/Agile.png, id=826, 523.9575pt x 135.50626pt>
 File: ./Figures/Agile.png Graphic file (type png)
 
 <use ./Figures/Agile.png>
 Package pdftex.def Info: ./Figures/Agile.png used on input line 36.
 (pdftex.def)             Requested size: 336.0pt x 86.89944pt.
- [29]
+ [28]
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
@@ -1361,13 +1360,13 @@ Overfull \hbox (5.2822pt too wide) in paragraph at lines 40--41
 eet . com$[][]\T1/pplj/m/n/12 ) to set goals
  []
 
-[30 <./Figures/Agile.png>]
+[29 <./Figures/Agile.png>]
 Overfull \hbox (6.45511pt too wide) in paragraph at lines 55--56
 \T1/pplj/m/n/12 Database de-vel-op-ment was per-formed us-ing the Hei-diSQL cli
 ent
  []
 
-<./Figures/SIDdbschema-simple.jpg, id=850, 1362.08875pt x 661.47125pt>
+<./Figures/SIDdbschema-simple.jpg, id=846, 1362.08875pt x 661.47125pt>
 File: ./Figures/SIDdbschema-simple.jpg Graphic file (type jpg)
 
 <use ./Figures/SIDdbschema-simple.jpg>
@@ -1379,13 +1378,13 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-[31 <./Figures/SIDdbschema-simple.jpg>]
+[30 <./Figures/SIDdbschema-simple.jpg>]
 Overfull \hbox (33.9544pt too wide) in paragraph at lines 75--76
 [] [][] \T1/pplj/m/n/12 Re-sults of anal-y-sis are en-tered into the con-sec-u-
 tive_probe_analysis
  []
 
-[32]
+[31]
 Package acronym Info: Label `acro:IDE' newly defined as it shall be overridden
 although it is yet undefined on input line 86.
 
@@ -1401,7 +1400,7 @@ ledj2 / FeatureExtraction$[][]\T1/pplj/m/n/12 ).
  []
 
 
-<./Figures/program_overview_extensive2.jpg, id=874, 2245.38875pt x 2101.8525pt>
+<./Figures/program_overview_extensive2.jpg, id=870, 2245.38875pt x 2101.8525pt>
 File: ./Figures/program_overview_extensive2.jpg Graphic file (type jpg)
 <use ./Figures/program_overview_extensive2.jpg>
 Package pdftex.def Info: ./Figures/program_overview_extensive2.jpg used on inpu
@@ -1412,8 +1411,8 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 99--100
  [][] 
  []
 
-[33] [34 <./Figures/program_overview_extensive2.jpg>]
-<./Figures/distributionof30arrays.jpeg, id=891, 803.0pt x 599.23875pt>
+[32] [33 <./Figures/program_overview_extensive2.jpg>]
+<./Figures/distributionof30arrays.jpeg, id=887, 803.0pt x 599.23875pt>
 File: ./Figures/distributionof30arrays.jpeg Graphic file (type jpg)
 
 <use ./Figures/distributionof30arrays.jpeg>
@@ -1424,14 +1423,14 @@ ne 124.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/normaldist.png, id=894, 671.50874pt x 334.24875pt>
+<./Figures/normaldist.png, id=890, 671.50874pt x 334.24875pt>
 File: ./Figures/normaldist.png Graphic file (type png)
 
 <use ./Figures/normaldist.png>
 Package pdftex.def Info: ./Figures/normaldist.png used on input line 137.
 (pdftex.def)             Requested size: 336.0pt x 167.24635pt.
- [35]
-<./Figures/consecutiveprobeanalysis.jpg, id=902, 916.42375pt x 1037.8775pt>
+ [34]
+<./Figures/consecutiveprobeanalysis.jpg, id=898, 916.42375pt x 1037.8775pt>
 File: ./Figures/consecutiveprobeanalysis.jpg Graphic file (type jpg)
 
 <use ./Figures/consecutiveprobeanalysis.jpg>
@@ -1439,32 +1438,32 @@ Package pdftex.def Info: ./Figures/consecutiveprobeanalysis.jpg used on input l
 ine 152.
 (pdftex.def)             Requested size: 235.19897pt x 266.37355pt.
 
-<./Figures/combiningtrioofprobes.jpg, id=903, 1102.1175pt x 369.38pt>
+<./Figures/combiningtrioofprobes.jpg, id=899, 1102.1175pt x 369.38pt>
 File: ./Figures/combiningtrioofprobes.jpg Graphic file (type jpg)
 
 <use ./Figures/combiningtrioofprobes.jpg>
 Package pdftex.def Info: ./Figures/combiningtrioofprobes.jpg used on input line
  160.
 (pdftex.def)             Requested size: 336.0pt x 112.61282pt.
- [36 <./Figures/distributionof30arrays.jpeg>] [37 <./Figures/normaldist.png> <.
-/Figures/consecutiveprobeanalysis.jpg>] [38 <./Figures/combiningtrioofprobes.jp
+ [35 <./Figures/distributionof30arrays.jpeg>] [36 <./Figures/normaldist.png> <.
+/Figures/consecutiveprobeanalysis.jpg>] [37 <./Figures/combiningtrioofprobes.jp
 g>]
 Package acronym Info: Label `acro:PGD' newly defined as it shall be overridden
 although it is yet undefined on input line 184.
- [39]) [40]
+ [38]) [39]
 \openout2 = `Chapters/Chapter03.aux'.
 
 
 (./Chapters/Chapter03.tex
 Chapter 3.
-<./Figures/probeswithinreportedregion.png, id=934, 613.29124pt x 332.24126pt>
+<./Figures/probeswithinreportedregion.png, id=930, 613.29124pt x 332.24126pt>
 File: ./Figures/probeswithinreportedregion.png Graphic file (type png)
 
 <use ./Figures/probeswithinreportedregion.png>
 Package pdftex.def Info: ./Figures/probeswithinreportedregion.png used on input
  line 12.
 (pdftex.def)             Requested size: 302.39795pt x 163.81862pt.
- [41
+ [40
 
 
 
@@ -1478,21 +1477,21 @@ ex-cluded
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 45.
 
-[42] <./Figures/nprobes_2_374.jpeg, id=949, 2107.875pt x 1170.3725pt>
+[41] <./Figures/nprobes_2_374.jpeg, id=945, 2107.875pt x 1170.3725pt>
 File: ./Figures/nprobes_2_374.jpeg Graphic file (type jpg)
 
 <use ./Figures/nprobes_2_374.jpeg>
 Package pdftex.def Info: ./Figures/nprobes_2_374.jpeg used on input line 70.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
- [43 <./Figures/nprobes_2_374.jpeg>]
-<./Figures/lowest_2_374.jpeg, id=959, 2107.875pt x 1170.3725pt>
+ [42 <./Figures/nprobes_2_374.jpeg>]
+<./Figures/lowest_2_374.jpeg, id=954, 2107.875pt x 1170.3725pt>
 File: ./Figures/lowest_2_374.jpeg Graphic file (type jpg)
 
 <use ./Figures/lowest_2_374.jpeg>
 Package pdftex.def Info: ./Figures/lowest_2_374.jpeg used on input line 81.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/average_2_374.jpeg, id=960, 2107.875pt x 1170.3725pt>
+<./Figures/average_2_374.jpeg, id=955, 2107.875pt x 1170.3725pt>
 File: ./Figures/average_2_374.jpeg Graphic file (type jpg)
 
 <use ./Figures/average_2_374.jpeg>
@@ -1502,7 +1501,7 @@ Package pdftex.def Info: ./Figures/average_2_374.jpeg used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/lowest_3_55.jpeg, id=965, 2107.875pt x 1170.3725pt>
+<./Figures/lowest_3_55.jpeg, id=960, 2107.875pt x 1170.3725pt>
 File: ./Figures/lowest_3_55.jpeg Graphic file (type jpg)
 
 <use ./Figures/lowest_3_55.jpeg>
@@ -1512,7 +1511,7 @@ Package pdftex.def Info: ./Figures/lowest_3_55.jpeg used on input line 101.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/average_3_55.jpeg, id=966, 2107.875pt x 1170.3725pt>
+<./Figures/average_3_55.jpeg, id=961, 2107.875pt x 1170.3725pt>
 File: ./Figures/average_3_55.jpeg Graphic file (type jpg)
 
 <use ./Figures/average_3_55.jpeg>
@@ -1522,13 +1521,13 @@ Package pdftex.def Info: ./Figures/average_3_55.jpeg used on input line 108.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [44 <./Figures/lowest_2_374.jpeg>] [45 <./Figures/average_2_374.jpeg>]
-[46 <./Figures/lowest_3_55.jpeg> <./Figures/average_3_55.jpeg>]
+) [43 <./Figures/lowest_2_374.jpeg>] [44 <./Figures/average_2_374.jpeg>]
+[45 <./Figures/lowest_3_55.jpeg> <./Figures/average_3_55.jpeg>]
 \openout2 = `Chapters/Chapter03_part1.aux'.
 
 
 (./Chapters/Chapter03_part1.tex
-<./Figures/testcasestrueposcoverage.png, id=987, 544.0325pt x 369.38pt>
+<./Figures/testcasestrueposcoverage.png, id=983, 544.0325pt x 369.38pt>
 File: ./Figures/testcasestrueposcoverage.png Graphic file (type png)
 
 <use ./Figures/testcasestrueposcoverage.png>
@@ -1539,25 +1538,25 @@ ine 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [47
+) [46
 
 
-] [48 <./Figures/testcasestrueposcoverage.png>]
+] [47 <./Figures/testcasestrueposcoverage.png>]
 \openout2 = `Chapters/Chapter03_part2.aux'.
 
 
-(./Chapters/Chapter03_part2.tex [49
+(./Chapters/Chapter03_part2.tex [48
 
 
 ]
-<./Figures/prospectivesamplecalls.jpg, id=1004, 1406.25375pt x 420.57124pt>
+<./Figures/prospectivesamplecalls.jpg, id=999, 1406.25375pt x 420.57124pt>
 File: ./Figures/prospectivesamplecalls.jpg Graphic file (type jpg)
 
 <use ./Figures/prospectivesamplecalls.jpg>
 Package pdftex.def Info: ./Figures/prospectivesamplecalls.jpg used on input lin
 e 32.
 (pdftex.def)             Requested size: 336.0pt x 100.48352pt.
-) [50 <./Figures/prospectivesamplecalls.jpg>]
+) [49 <./Figures/prospectivesamplecalls.jpg>]
 \openout2 = `Chapters/Chapter04.aux'.
 
  (./Chapters/Chapter04.tex
@@ -1567,7 +1566,7 @@ Overfull \hbox (4.94382pt too wide) in paragraph at lines 16--16
  |[]\T1/pplj/m/sc/12/80ls the num-ber of probes within true pos-i-tive calls| 
  []
 
-[51
+[50
 
 
 
@@ -1582,8 +1581,8 @@ Overfull \hbox (6.36pt too wide) in paragraph at lines 33--34
 nd prospec-
  []
 
-[52] [53]
-<./Figures/incorrectcallandalternatecomb.jpg, id=1027, 1204.5pt x 266.9975pt>
+[51] [52]
+<./Figures/incorrectcallandalternatecomb.jpg, id=1023, 1204.5pt x 266.9975pt>
 File: ./Figures/incorrectcallandalternatecomb.jpg Graphic file (type jpg)
 
 <use ./Figures/incorrectcallandalternatecomb.jpg>
@@ -1595,7 +1594,7 @@ Overfull \hbox (18.83894pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[54 <./Figures/incorrectcallandalternatecomb.jpg>] [55]
+[53 <./Figures/incorrectcallandalternatecomb.jpg>] [54]
 Package acronym Info: Label `acro:LIMS' newly defined as it shall be overridden
 
 although it is yet undefined on input line 87.
@@ -1605,7 +1604,7 @@ Overfull \hbox (0.3359pt too wide) in paragraph at lines 87--88
 -ment Sys-tem
  []
 
-[56]
+[55]
 Overfull \hbox (7.7824pt too wide) in paragraph at lines 93--94
 [] [][] \T1/pplj/m/n/12 Con-fir-ma-tion that anal-y-sis has com-pleted suc-cess
 -fully should
@@ -1623,16 +1622,16 @@ Overfull \hbox (12.348pt too wide) in paragraph at lines 107--108
 base
  []
 
-[57]
+[56]
 Package acronym Info: Label `acro:csv' newly defined as it shall be overridden
 although it is yet undefined on input line 122.
- [58]
+ [57]
 Overfull \hbox (9.19843pt too wide) in paragraph at lines 130--131
 [] [][] \T1/pplj/m/n/12 The con-sec-u-tive_probe_analysis ta-ble could be trun-
 cated once
  []
 
-[59] [60]) [61]
+[58] [59]) [60]
 \openout2 = `Chapters/Chapter05.aux'.
 
  (./Chapters/Chapter05.tex
@@ -1643,7 +1642,7 @@ Overfull \hbox (0.46716pt too wide) in paragraph at lines 5--6
 present
  []
 
-) [62
+) [61
 
 
 
@@ -1653,7 +1652,7 @@ present
  (./Chapters/Chapter0A.tex
 Appendix A.
 
-<./Figures/testcasesaverageconfidenceZscore.jpeg, id=1073, 2107.875pt x 1170.37
+<./Figures/testcasesaverageconfidenceZscore.jpeg, id=1069, 2107.875pt x 1170.37
 25pt>
 File: ./Figures/testcasesaverageconfidenceZscore.jpeg Graphic file (type jpg)
  <use ./Figures/testcasesaverageconfidenceZscore.jpeg>
@@ -1661,7 +1660,7 @@ Package pdftex.def Info: ./Figures/testcasesaverageconfidenceZscore.jpeg used o
 n input line 9.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/testcaseslowestconfidenceZscore.jpeg, id=1074, 2107.875pt x 1170.372
+<./Figures/testcaseslowestconfidenceZscore.jpeg, id=1070, 2107.875pt x 1170.372
 5pt>
 File: ./Figures/testcaseslowestconfidenceZscore.jpeg Graphic file (type jpg)
  <use ./Figures/testcaseslowestconfidenceZscore.jpeg>
@@ -1669,7 +1668,7 @@ Package pdftex.def Info: ./Figures/testcaseslowestconfidenceZscore.jpeg used on
  input line 16.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/testcasesprobecount.jpeg, id=1075, 2107.875pt x 1170.3725pt>
+<./Figures/testcasesprobecount.jpeg, id=1071, 2107.875pt x 1170.3725pt>
 File: ./Figures/testcasesprobecount.jpeg Graphic file (type jpg)
 
 <use ./Figures/testcasesprobecount.jpeg>
@@ -1677,14 +1676,14 @@ Package pdftex.def Info: ./Figures/testcasesprobecount.jpeg used on input line
 23.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
 
-<./Figures/testcaseshighestconfidenceZscore.jpeg, id=1076, 2107.875pt x 1170.37
+<./Figures/testcaseshighestconfidenceZscore.jpeg, id=1072, 2107.875pt x 1170.37
 25pt>
 File: ./Figures/testcaseshighestconfidenceZscore.jpeg Graphic file (type jpg)
  <use ./Figures/testcaseshighestconfidenceZscore.jpeg>
 Package pdftex.def Info: ./Figures/testcaseshighestconfidenceZscore.jpeg used o
 n input line 30.
 (pdftex.def)             Requested size: 336.0pt x 186.54909pt.
-) [63
+) [62
 
 
 
@@ -1693,13 +1692,13 @@ Overfull \hbox (178.04361pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[64 <./Figures/testcasesaverageconfidenceZscore.jpeg> <./Figures/testcaseslowes
+[63 <./Figures/testcasesaverageconfidenceZscore.jpeg> <./Figures/testcaseslowes
 tconfidenceZscore.jpeg>]
 Overfull \hbox (178.04361pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[65 <./Figures/testcasesprobecount.jpeg> <./Figures/testcaseshighestconfidenceZ
+[64 <./Figures/testcasesprobecount.jpeg> <./Figures/testcaseshighestconfidenceZ
 score.jpeg>]
 \openout2 = `FrontBackmatter/Bibliography.aux'.
 
@@ -1708,7 +1707,7 @@ Underfull \hbox (badness 1406) in paragraph at lines 13--16
 []\T1/pplj/m/n/12 Phillipe Hupe.  GLAD-Introduction.  http://bioinfo-
  []
 
-[66
+[65
 
 
 
@@ -1725,7 +1724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 ilent . com / en /
  []
 
-[67]
+[66]
 Underfull \hbox (badness 2409) in paragraph at lines 107--110
 []\T1/pplj/m/n/12 Andy Dust-man.  MySQLdb.  [][]$\T1/fvm/m/n/12 https : / / git
 hub . com /
@@ -1778,7 +1777,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 pplj/m/n/12 , ac-
  []
 
-[68]
+[67]
 Underfull \hbox (badness 1968) in paragraph at lines 153--156
 []\T1/pplj/m/n/12 HeidiSQL.  Hei-diSQL - MySQL, MSSQL and Post-
  []
@@ -1789,10 +1788,10 @@ Underfull \hbox (badness 1005) in paragraph at lines 166--168
 ttps : / / www .
  []
 
-)) [69]
+)) [68]
 \openout2 = `FrontBackmatter/Colophon.aux'.
 
- (./FrontBackmatter/Colophon.tex) [70
+ (./FrontBackmatter/Colophon.tex) [69
 
 
 
@@ -1994,10 +1993,10 @@ Package rerunfilecheck Info: File `write_up.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 16484 strings out of 495028
- 259647 string characters out of 6181497
- 444881 words of memory out of 5000000
- 18903 multiletter control sequences out of 15000+600000
+ 16482 strings out of 495028
+ 259626 string characters out of 6181497
+ 443878 words of memory out of 5000000
+ 18902 multiletter control sequences out of 15000+600000
  74436 words of font info for 100 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,16n,67p,1071b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2012,10 +2011,10 @@ ij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on write_up.pdf (70 pages, 2570413 bytes).
+Output written on write_up.pdf (69 pages, 2570176 bytes).
 PDF statistics:
- 1277 PDF objects out of 1440 (max. 8388607)
- 1135 compressed objects within 12 object streams
- 301 named destinations out of 1000 (max. 500000)
+ 1272 PDF objects out of 1440 (max. 8388607)
+ 1131 compressed objects within 12 object streams
+ 300 named destinations out of 1000 (max. 500000)
  16292 words of extra memory for PDF output out of 17280 (max. 10000000)
 

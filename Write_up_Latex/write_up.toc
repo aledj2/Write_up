@@ -1,107 +1,107 @@
 \select@language {american}
 \vspace {-\cftbeforepartskip }
 \select@language {american}
-\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{16}{chapter.1}
-\contentsline {section}{\numberline {1.1}Array CGH}{16}{section.1.1}
-\contentsline {section}{\numberline {1.2}Copy Number Variation (CNV)}{17}{section.1.2}
-\contentsline {section}{\numberline {1.3}Application of array CGH in the clinical setting}{17}{section.1.3}
-\contentsline {section}{\numberline {1.4}Patient to patient hybridisation}{17}{section.1.4}
-\contentsline {section}{\numberline {1.5}Project rationale}{18}{section.1.5}
-\contentsline {section}{\numberline {1.6}Project aims}{20}{section.1.6}
-\contentsline {section}{\numberline {1.7}Array design}{20}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Feature extraction}{20}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}Feature extraction file}{21}{subsection.1.7.2}
-\contentsline {subsubsection}{\numberline {1.7.2.1}Parameters}{21}{subsubsection.1.7.2.1}
-\contentsline {subsubsection}{\numberline {1.7.2.2}Stats}{22}{subsubsection.1.7.2.2}
-\contentsline {subsubsection}{\numberline {1.7.2.3}Features}{22}{subsubsection.1.7.2.3}
-\contentsline {section}{\numberline {1.8}Use of algorithms to detect copy number variation}{22}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}Z score algorithm}{23}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}Aberration Detection Method (ADM-1/ADM-2)}{23}{subsection.1.8.2}
-\contentsline {subsubsection}{\numberline {1.8.2.1}ADM-1}{23}{subsubsection.1.8.2.1}
-\contentsline {subsubsection}{\numberline {1.8.2.2}ADM-2}{24}{subsubsection.1.8.2.2}
-\contentsline {subsection}{\numberline {1.8.3}Circular binary segmentation (CBS)}{24}{subsection.1.8.3}
-\contentsline {subsection}{\numberline {1.8.4}Hidden Markov model}{25}{subsection.1.8.4}
-\contentsline {subsection}{\numberline {1.8.5}Algorithm performance}{26}{subsection.1.8.5}
-\contentsline {section}{\numberline {1.9}Data storage and manipulation}{26}{section.1.9}
-\contentsline {subsection}{\numberline {1.9.1}Relational database}{26}{subsection.1.9.1}
-\contentsline {subsection}{\numberline {1.9.2}Non-relational database}{27}{subsection.1.9.2}
-\contentsline {subsection}{\numberline {1.9.3}Python}{27}{subsection.1.9.3}
-\contentsline {subsection}{\numberline {1.9.4}R statistical software package}{27}{subsection.1.9.4}
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Methods}}{28}{chapter.2}
-\contentsline {section}{\numberline {2.1}Shared Imbalance Detection (SID) tool}{28}{section.2.1}
-\contentsline {section}{\numberline {2.2}Requirements gathering}{28}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Functional requirements}{28}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Non functional requirements}{29}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Project management}{30}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Database infrastructure}{30}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}SQL server}{30}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Migration from development server (MYSQL) to production server (MS-SQL)}{30}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}HeidiSQL client}{31}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}SID - database design}{31}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Indexes and keys}{32}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Importing and processing feature extraction files}{32}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Python}{32}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Version control}{33}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}SID - pprocessing feature extraction files}{33}{section.2.6}
-\contentsline {section}{\numberline {2.7}Detection of CNV}{33}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Choice of algorithm (Z score)}{33}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Creating a normal reference range}{35}{subsection.2.7.2}
-\contentsline {subsubsection}{\numberline {2.7.2.1}Normal distribution of reference range}{35}{subsubsection.2.7.2.1}
-\contentsline {subsection}{\numberline {2.7.3}Determining if a probe is normal or abnormal}{35}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}Duplicated probes}{36}{subsection.2.7.4}
-\contentsline {subsection}{\numberline {2.7.5}Determining if a region is normal or abnormal}{36}{subsection.2.7.5}
-\contentsline {section}{\numberline {2.8}Creation of true positive feature extraction files}{38}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Training cases}{38}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Test cases}{39}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Prospective cases}{40}{subsection.2.8.3}
-\contentsline {section}{\numberline {2.9}Definition of true positive and false positive calls}{40}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Unknown true positive calls}{40}{subsection.2.9.1}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Results}}{41}{chapter.3}
-\contentsline {section}{\numberline {3.1}Training cases}{41}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Z score threshold}{41}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Removal of cases with high false positive calls}{42}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Comparison of true positive and false positive calls}{42}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Number of probes within a call}{43}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Difference between true and false positive Z scores using a threshold of 2.374}{44}{subsubsection.3.1.3.2}
-\contentsline {subsubsection}{\numberline {3.1.3.3}Difference between true and false positive Z scores using a threshold of 3.55}{44}{subsubsection.3.1.3.3}
-\contentsline {subsubsection}{\numberline {3.1.3.4}Suitability of reference range}{45}{subsubsection.3.1.3.4}
-\contentsline {section}{\numberline {3.2}Test Cases}{47}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}A greater sensitivity was seen using more representative feature extraction files}{47}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Suitability of reference range}{47}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Proportion of CNV regions covered by calls}{47}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Prospective cases}{49}{section.3.3}
-\contentsline {section}{\numberline {3.4}Performance of SID}{50}{section.3.4}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Discussion}}{51}{chapter.4}
-\contentsline {section}{\numberline {4.1}Suitability of SID}{51}{section.4.1}
-\contentsline {section}{\numberline {4.2}Z score threshold to define a probe as abnormal}{51}{section.4.2}
-\contentsline {section}{\numberline {4.3}The number of probes within true positive calls}{52}{section.4.3}
-\contentsline {section}{\numberline {4.4}Combining overlapping trios of abnormal probes}{52}{section.4.4}
-\contentsline {section}{\numberline {4.5}Benign CNV}{52}{section.4.5}
-\contentsline {section}{\numberline {4.6}Calls smaller than 5 probes}{53}{section.4.6}
-\contentsline {section}{\numberline {4.7}Different thresholds for gain or loss}{53}{section.4.7}
-\contentsline {section}{\numberline {4.8}Alternative approaches to consecutive probes analysis}{53}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Larger sliding windows}{53}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Sliding window - Regions of interest}{54}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}Further work}{55}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Sex chromosomes}{55}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Sample type}{55}{subsection.4.9.2}
-\contentsline {subsection}{\numberline {4.9.3}What happens when shared CNV is detected?}{55}{subsection.4.9.3}
-\contentsline {subsection}{\numberline {4.9.4}Exporting results to LIMS}{56}{subsection.4.9.4}
-\contentsline {subsection}{\numberline {4.9.5}Initiation of SID}{57}{subsection.4.9.5}
-\contentsline {subsection}{\numberline {4.9.6}Migration of database to the server}{57}{subsection.4.9.6}
-\contentsline {section}{\numberline {4.10}Long term management of SID}{57}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Unit test}{57}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Code review}{58}{subsection.4.10.2}
-\contentsline {subsection}{\numberline {4.10.3}Recalculation of the reference range}{58}{subsection.4.10.3}
-\contentsline {subsection}{\numberline {4.10.4}Truncating the database to maintain performance}{58}{subsection.4.10.4}
-\contentsline {subsection}{\numberline {4.10.5}Contingency plan}{59}{subsection.4.10.5}
-\contentsline {subsection}{\numberline {4.10.6}Database backup}{59}{subsection.4.10.6}
-\contentsline {subsection}{\numberline {4.10.7}Validation}{60}{subsection.4.10.7}
-\contentsline {subsection}{\numberline {4.10.8}Documentation}{60}{subsection.4.10.8}
-\contentsline {section}{\numberline {4.11}Future considerations}{61}{section.4.11}
-\contentsline {subsection}{\numberline {4.11.1}Array redesign and multiple array designs}{61}{subsection.4.11.1}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Conclusion}}{62}{chapter.5}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{63}{appendix.A}
-\contentsline {section}{\numberline {A.1}Analysis of calls made in samples with the 750 probe deletion on chromosome 22}{63}{section.A.1}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{15}{chapter.1}
+\contentsline {section}{\numberline {1.1}Array CGH}{15}{section.1.1}
+\contentsline {section}{\numberline {1.2}Copy Number Variation (CNV)}{16}{section.1.2}
+\contentsline {section}{\numberline {1.3}Application of array CGH in the clinical setting}{16}{section.1.3}
+\contentsline {section}{\numberline {1.4}Patient to patient hybridisation}{16}{section.1.4}
+\contentsline {section}{\numberline {1.5}Project rationale}{17}{section.1.5}
+\contentsline {section}{\numberline {1.6}Project aims}{19}{section.1.6}
+\contentsline {section}{\numberline {1.7}Array design}{19}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Feature extraction}{19}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Feature extraction file}{20}{subsection.1.7.2}
+\contentsline {subsubsection}{\numberline {1.7.2.1}Parameters}{20}{subsubsection.1.7.2.1}
+\contentsline {subsubsection}{\numberline {1.7.2.2}Stats}{21}{subsubsection.1.7.2.2}
+\contentsline {subsubsection}{\numberline {1.7.2.3}Features}{21}{subsubsection.1.7.2.3}
+\contentsline {section}{\numberline {1.8}Use of algorithms to detect copy number variation}{21}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Z score algorithm}{22}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Aberration Detection Method (ADM-1/ADM-2)}{22}{subsection.1.8.2}
+\contentsline {subsubsection}{\numberline {1.8.2.1}ADM-1}{22}{subsubsection.1.8.2.1}
+\contentsline {subsubsection}{\numberline {1.8.2.2}ADM-2}{23}{subsubsection.1.8.2.2}
+\contentsline {subsection}{\numberline {1.8.3}Circular binary segmentation (CBS)}{23}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}Hidden Markov model}{24}{subsection.1.8.4}
+\contentsline {subsection}{\numberline {1.8.5}Algorithm performance}{25}{subsection.1.8.5}
+\contentsline {section}{\numberline {1.9}Data storage and manipulation}{25}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Relational database}{25}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Non-relational database}{26}{subsection.1.9.2}
+\contentsline {subsection}{\numberline {1.9.3}Python}{26}{subsection.1.9.3}
+\contentsline {subsection}{\numberline {1.9.4}R statistical software package}{26}{subsection.1.9.4}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Methods}}{27}{chapter.2}
+\contentsline {section}{\numberline {2.1}Shared Imbalance Detection (SID) tool}{27}{section.2.1}
+\contentsline {section}{\numberline {2.2}Requirements gathering}{27}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Functional requirements}{27}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Non functional requirements}{28}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Project management}{29}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Database infrastructure}{29}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}SQL server}{29}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Migration from development server (MYSQL) to production server (MS-SQL)}{29}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}HeidiSQL client}{30}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}SID - database design}{30}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Indexes and keys}{31}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Importing and processing feature extraction files}{31}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Python}{31}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Version control}{32}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}SID - pprocessing feature extraction files}{32}{section.2.6}
+\contentsline {section}{\numberline {2.7}Detection of CNV}{32}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Choice of algorithm (Z score)}{32}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Creating a normal reference range}{34}{subsection.2.7.2}
+\contentsline {subsubsection}{\numberline {2.7.2.1}Normal distribution of reference range}{34}{subsubsection.2.7.2.1}
+\contentsline {subsection}{\numberline {2.7.3}Determining if a probe is normal or abnormal}{34}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Duplicated probes}{35}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Determining if a region is normal or abnormal}{35}{subsection.2.7.5}
+\contentsline {section}{\numberline {2.8}Creation of true positive feature extraction files}{37}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Training cases}{37}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Test cases}{38}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Prospective cases}{39}{subsection.2.8.3}
+\contentsline {section}{\numberline {2.9}Definition of true positive and false positive calls}{39}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Unknown true positive calls}{39}{subsection.2.9.1}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Results}}{40}{chapter.3}
+\contentsline {section}{\numberline {3.1}Training cases}{40}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Z score threshold}{40}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Removal of cases with high false positive calls}{41}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Comparison of true positive and false positive calls}{41}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Number of probes within a call}{42}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Difference between true and false positive Z scores using a threshold of 2.374}{43}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Difference between true and false positive Z scores using a threshold of 3.55}{43}{subsubsection.3.1.3.3}
+\contentsline {subsubsection}{\numberline {3.1.3.4}Suitability of reference range}{44}{subsubsection.3.1.3.4}
+\contentsline {section}{\numberline {3.2}Test Cases}{46}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}A greater sensitivity was seen using more representative feature extraction files}{46}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Suitability of reference range}{46}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Proportion of CNV regions covered by calls}{46}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Prospective cases}{48}{section.3.3}
+\contentsline {section}{\numberline {3.4}Performance of SID}{49}{section.3.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Discussion}}{50}{chapter.4}
+\contentsline {section}{\numberline {4.1}Suitability of SID}{50}{section.4.1}
+\contentsline {section}{\numberline {4.2}Z score threshold to define a probe as abnormal}{50}{section.4.2}
+\contentsline {section}{\numberline {4.3}The number of probes within true positive calls}{51}{section.4.3}
+\contentsline {section}{\numberline {4.4}Combining overlapping trios of abnormal probes}{51}{section.4.4}
+\contentsline {section}{\numberline {4.5}Benign CNV}{51}{section.4.5}
+\contentsline {section}{\numberline {4.6}Calls smaller than 5 probes}{52}{section.4.6}
+\contentsline {section}{\numberline {4.7}Different thresholds for gain or loss}{52}{section.4.7}
+\contentsline {section}{\numberline {4.8}Alternative approaches to consecutive probes analysis}{52}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Larger sliding windows}{52}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Sliding window - Regions of interest}{53}{subsection.4.8.2}
+\contentsline {section}{\numberline {4.9}Further work}{54}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Sex chromosomes}{54}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Sample type}{54}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}What happens when shared CNV is detected?}{54}{subsection.4.9.3}
+\contentsline {subsection}{\numberline {4.9.4}Exporting results to LIMS}{55}{subsection.4.9.4}
+\contentsline {subsection}{\numberline {4.9.5}Initiation of SID}{56}{subsection.4.9.5}
+\contentsline {subsection}{\numberline {4.9.6}Migration of database to the server}{56}{subsection.4.9.6}
+\contentsline {section}{\numberline {4.10}Long term management of SID}{56}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Unit test}{56}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Code review}{57}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}Recalculation of the reference range}{57}{subsection.4.10.3}
+\contentsline {subsection}{\numberline {4.10.4}Truncating the database to maintain performance}{57}{subsection.4.10.4}
+\contentsline {subsection}{\numberline {4.10.5}Contingency plan}{58}{subsection.4.10.5}
+\contentsline {subsection}{\numberline {4.10.6}Database backup}{58}{subsection.4.10.6}
+\contentsline {subsection}{\numberline {4.10.7}Validation}{59}{subsection.4.10.7}
+\contentsline {subsection}{\numberline {4.10.8}Documentation}{59}{subsection.4.10.8}
+\contentsline {section}{\numberline {4.11}Future considerations}{60}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Array redesign and multiple array designs}{60}{subsection.4.11.1}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Conclusion}}{61}{chapter.5}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{62}{appendix.A}
+\contentsline {section}{\numberline {A.1}Analysis of calls made in samples with the 750 probe deletion on chromosome 22}{62}{section.A.1}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{66}{dummy.7}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{65}{dummy.7}
