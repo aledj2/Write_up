@@ -1,8 +1,8 @@
 %*****************************************
 \chapter{Methods}\label{ch:Methods}
 %*****************************************
-\section{Shared Imbalance Detection tool (SID)}
-The \ac{SID} tool consists of two components, a database and a python script. The database holds information about the array design, values used during the analysis and tables which are filled during analysis. The python script parses feature extraction files, importing information to the database and performing the analysis with a combination of SQL commands and python functions.
+\section{Shared Imbalance Detection (SID) tool}
+The \ac{SID} tool consists of two components, a database and a python script. The database holds information about the array design, values used during the analysis and tables which are filled during analysis. The python script parses feature extraction files, importing information to the database and performing the Z score analysis with a combination of SQL commands and python functions.
 
 \section{Requirements gathering}\label{Requirements}
 To ensure the tool is fit for purpose requirements were agreed with key stakeholders in the Array and Bioinformatics teams within the Viapath Genetic Laboratories:
@@ -15,8 +15,8 @@ To ensure the tool is fit for purpose requirements were agreed with key stakehol
 \end{itemize}
 \subsection{Non functional requirements}
 \begin{itemize}
-\item In line with the existing departmental resources, experience and skill sets data will be stored in an MS-SQL database hosted by a local server, ensuring long term support.
-\item Any scripting should be performed in Python, in line with the existing department skill set to ensure the department can continue to support and develop the code and perform code review as per best practice guidelines. 
+\item In line with the existing departmental resources, experience and skill sets data will be stored in an MS-SQL database hosted by a remote server, ensuring long term support.
+\item Any scripting should be performed in Python, in line with the existing department skill set to ensure long term support and development and code reviewed as per best practice guidelines. 
 \item Python code must conform with the departmental Python style guide.
 \item Code must be version controlled using Git.
 \item Processing should be timely and able to be performed on existing desktop computers.
@@ -28,7 +28,7 @@ To ensure the tool is fit for purpose requirements were agreed with key stakehol
 \item \ac{SOP} and validation documentation in line with ISO accreditation requirements.
 \item Validated in line with departmental and ISO quality procedures.
 \end{itemize}
-\subsection{Project Management}
+\subsection{Project management}
 \begin{itemize}
 \item Use an Agile development methodology to regularly test and refine the project (Figure \ref{fig:Agile}).
 \begin{figure}[h]
@@ -43,34 +43,34 @@ To ensure the tool is fit for purpose requirements were agreed with key stakehol
 \end{itemize}
 
 \section{Database infrastructure}
-\subsection{SQL Server}
+\subsection{SQL server}
 Access to the MS-SQL hosted on the department server was not available during development. Installation of an MS-SQL server on the development system was also not possible at the start of the project so development was performed using a MySQL server (v5.6)\cite{mysql_mysql_????} running locally on a development PC running Windows 10. 
 
-\subsection{Migration from development server (MYSQL) to production server (MSSQL)}
-The database was later transferred to a MS-SQL server (SQLExpress 2014 \cite{_sql_????}) on the development using Microsoft SQL Server Migration Assistant (v5.3) for MySQL \cite{_microsoft_????}
+\subsection{Migration from development server (MYSQL) to production server (MS-SQL)}
+The database was later transferred to a MS-SQL server (SQLExpress 2014 \cite{_sql_????}) on the development system using Microsoft SQL Server Migration Assistant (v5.3) for MySQL \cite{_microsoft_????}
 \paragraph*{}
 The MySQLdb python connector was replaced by PyODBC MSSQL connector \cite{pyodbc_mkleehammer/pyodbc_????} and tested to ensure no loss of function.
 
 \subsection{HeidiSQL client}
 Database development was performed using the HeidiSQL client (v9.1)\cite{heidisql_heidisql_2016}.
 
-\section{SID - Database design}
-To minimise processing time fields from the feature extraction file imported to the database was kept to a minimum. The database is designed in third normalised form, storing numeric keys to prevent anomalies and to maximise the performance of joins. Array wide values are stored a single time in the feparam table, not for each feature.
+\section{SID - database design}
+To minimise processing time only essential fields from the feature extraction file is imported to the database. The database is designed in third normalised form, storing numeric keys to prevent anomalies and to maximise the performance of joins. Array wide values are stored a single time in the feparam table, not for each feature.
 \begin{figure}
 \centering
-\includegraphics[width=1\linewidth]{./Figures/SIDdbschema-simple}
+\includegraphics[width=1.2\linewidth]{./Figures/SIDdbschema-simple}
 \caption[The SID database schema]{The SID database schema. Five tables are required.\string^ denotes an indexed field, * denotes a primary key. Lines denote how tables are joined.}
 \label{fig:SIDdbschema-simple}
 \end{figure}
 
 \paragraph*{}
-Five tables are required (Figure \ref{fig:SIDdbschema-simple}).The Feparam table holds the filename. Upon insertion an auto incrementing number is created as the primary key which is used as the unique identifier for that array (Array\_ID). The Feparam table also records the reference table used  and an automatic time stamp. 
+Five tables are required (Figure \ref{fig:SIDdbschema-simple}).The Feparam table holds the filename of the feature extraction file. Upon insertion an auto incrementing number is created as the primary key and used as the unique identifier for that array (Array\_ID). The Feparam table also records the reference table used and an automatic time stamp. 
 \paragraph*{}
-The array design is stored in the Probeorder table. Each probe has a numerical key (probekey) and it's order in genomic position (probeorder). Probeorder only contains non-control probes and marks replicated probes.
+The array design is stored in the Probeorder table. Each probe has a numerical key (probekey) and it's order in genomic position (probeorder). Only non-control probes are stored and replicated probes flagged.
 \paragraph*{}
-The ReferenceValues table holds the average signal intensity and the standard deviation from the normal control population (see \ref{ch:createreference}).
+The ReferenceValues table holds the average signal intensity and the standard deviation from the normal control population for each dye at each probe (see \ref{ch:createreference}).
 \paragraph*{}
-The Features table holds the analysis for each probe. Of the 42 fields only the probename and processed signals are imported. The remaining fields are populated using information from other tables.
+The Features table holds the analysis for each probe. Of the 42 fields only the probename and processed signals are imported. Remaining fields are populated during the analysis.
 \paragraph*{}
 Results of analysis are entered into the consecutive\_probe\_analysis table enabling the aberration to be fully characterised.
 
@@ -79,7 +79,7 @@ Each table has a primary key which is unique and indexed.
 Any columns which are joined to the primary key of another table are foreign keys.
 Any columns used to join table are also indexed to improve performance.
 
-\section{Importing and Processing Feature Extraction Files}
+\section{Importing and processing feature extraction files}
 \subsection{Python}
 Feature extraction files were parsed using Python (v2.7)\cite{python_software_foundation_python_2010}. The Anaconda Python distribution (v2.3.0) \cite{continuum_why_2016} was selected to make use of the pre-installed packages such as NumPy, SciPy and math packages. The package manager Conda was used to install the MySQLdb package (mysql-python v1.2.5)\cite{dustman2014} to access the MySQL database from python. 
 \paragraph*{}
@@ -91,19 +91,19 @@ The Pylint Python package (v 1.4.2) \cite{pylint_code_????} and autopep8 were us
 Python code was version controlled using Git and backed up using GitHub (\url{https://github.com/aledj2/FeatureExtraction}).
 
 
-\section{SID - Processing Feature extraction files}
-Figure \ref{fig:program_overview_extensive2} shows an overview of the SID python script.
+\section{SID - pprocessing feature extraction files}
+An overview of the SID python script can be seen in Figure \ref{fig:program_overview_extensive2} .
 
 \begin{figure}
 \centering
 \includegraphics[width=1.2\linewidth]{./Figures/program_overview_extensive2}
-\caption[A visual representation of the SID python script]{A visual representation of the SID python script. The Get\_files\_and\_probes class compares the list of feature extraction files within a directory to the feparam table.\\ Each array yet to be analysed is passed to Analyse\_array class. The read file module extracts the relevant information into dictionaries. The insert FEparams module enters the filename to the database and captures the primary key assigned (the array\_ID). The feature section of the feature extraction file is broken into 10 and inserted to the table with the array\_ID.\\ The calculate log ratios module applies an update statement to calculate Z scores and log ratios. The get Z scores module takes these Z scores and identifies shared trios of abnormal probes, combines these into larger calls which are also stored in the database. Functions coloured green read from the database, yellow process data and blue are \_\_init\_\_ modules which initialise variables for the class}
+\caption[A visual representation of the SID python script]{A visual representation of the SID python script. The Get\_files\_and\_probes class compares the list of feature extraction files within a directory to the feparam table.\\ Each array yet to be analysed is passed to Analyse\_array class. The read file module extracts the relevant information into dictionaries. The insert FEparams module enters the filename to the database and captures the primary key assigned (the array\_ID). The features section of the feature extraction file is broken into 10 and inserted with the array\_ID.\\ The calculate log ratios module applies an update statement to calculate Z scores and log ratios. The get Z scores module takes these Z scores and identifies shared trios of abnormal probes, combining overlapping or neighbouring calls and storing results. Functions coloured green read from the database, yellow process data and blue are \_\_init\_\_ modules which initialise variables for the class}
 \label{fig:program_overview_extensive2}
 \end{figure}
 
 \section{Detection of CNV}
 \subsection{Choice of algorithm (Z score)}
-A Z score analysis method was selected for the analysis as the characterisation of breakpoints is not as critical as in routine analysis and this algorithm is very simple to implement, maintain and troubleshoot, without the need for any additional software eg R.
+A Z score analysis method was selected for the analysis as the characterisation of breakpoints is not as critical as in routine analysis and this algorithm is simple to implement, maintain and troubleshoot, without the need for any additional software such as R.
 \paragraph*{}
 A Z score (equation \ref{eq:Zscore}) provides a measure of how many standard deviations the signal intensity of a probe is from the mean of a normal population. A threshold can then be applied to score probes as normal or abnormal.
 \begin{equation} \label{eq:Zscore}
@@ -111,9 +111,9 @@ Z = \frac{Signal\ Intensity - Mean}{SD}
 \end{equation}
 
 \subsection{Creating a normal reference range} \label{ch:createreference}
-100 array cases with no reported CNV were selected to create a reference range. Care was taken not to select only high quality arrays as this may result in many false positive calls in poor quality arrays.
+100 arrays with no reported CNV were selected to create a reference range. Care was taken not to select only high quality arrays as this may result in many false positive calls in poor quality arrays.
 \paragraph*{}
-The 100 cases were imported into the database. A Python script calculated the average signal intensity and standard deviation for each dye at each probe.
+The 100 arrays were imported into the database. A Python script calculated the average signal intensity and standard deviation for each dye at each probe.
 These values are held in the ReferenceValues table which is versioned using the date as the reference may require periodically recalculating.
 \paragraph*{}
 The ReferenceValues table used is specified within the SID  Python script and recorded in the Feparams table, allowing analysis to be repeated after the reference range has been recalculated.
@@ -135,7 +135,7 @@ The Z score is a measure of how many standard deviations from the mean the signa
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{./Figures/normaldist}
-\caption[The normal distribution]{Thresholds can be applied to define probes as abnormal or normal. A more extreme threshold will define fewer probes as abnormal.}
+\caption[The normal distribution]{Thresholds define probes as abnormal or normal. A more extreme threshold will define fewer probes as abnormal.}
 \label{fig:normaldist}
 \end{figure}
 
@@ -149,7 +149,7 @@ To combine abnormal probes into segments a slightly different approach was taken
 
 \begin{figure}
 \centering
-\includegraphics[width=1\linewidth]{./Figures/consecutiveprobeanalysis}
+\includegraphics[width=0.7\linewidth]{./Figures/consecutiveprobeanalysis}
 \caption[Consecutive probe analysis algorithm]{Consecutive probe analysis algorithm. To determine if the sliding window of three probes is abnormal in both samples the Z score of each probe is tested in succession. The threshold is defined in SID python script.\\
 This process is repeated assessing if the Z score is less than the negative threshold.}
 \label{fig:consecutiveprobeanalysis}
@@ -163,7 +163,7 @@ This process is repeated assessing if the Z score is less than the negative thre
 \end{figure}
 
 \paragraph*{}
-Aberrations below three probes are not reported so a sliding window of three probes was used, identifying shared CNV of three consecutive probes (Figure \ref{fig:consecutiveprobeanalysis}). The window moved along the entire chromosome creating overlapping tiles \ref{fig:combiningtrioofprobes}.
+Aberrations below three probes are not reported so a sliding window of three probes was used, identifying shared CNV of three consecutive probes (Figure \ref{fig:consecutiveprobeanalysis}). The window moved along the entire chromosome creating overlapping tiles (Figure \ref{fig:combiningtrioofprobes}).
 
 \paragraph*{}
 Trios of shared CNV are then combined in line with routine analysis, combining regions unless separated by 3 or more normal probes (Figure \ref{fig:combiningtrioofprobes}).
@@ -184,7 +184,7 @@ To ensure the signal intensities would be compared against the correct reference
 EvE, a Python script used for the post-hoc hybridisation of arrays in \ac{PGD} cases, parses two feature extraction files, extracting all measurements for both samples on both arrays, and creates a new feature extraction file where the Cy3 measurements are populated from the Cy3 sample from the first file and the Cy5 measurements from the Cy5 sample from the second file.
 
 \paragraph*{}
-The test cases were reported to have one of the most commonly reported CNV, representing a range of sizes and loss and gains \ref{tab:testset_calls}.
+The test cases were reported to have one of the most commonly reported CNV, representing a range of sizes and loss and gains (Table \ref{tab:testset_calls}).
 
 \begin{table}
 \caption{Cases with one of the 9 most common CNV were used to create the test set}
@@ -207,15 +207,14 @@ The test cases were reported to have one of the most commonly reported CNV, repr
 \end{table}
 
 \subsection{Prospective cases}
-Finally a third set of routine array files were used as a prospective trial. 
-121 files used to create the test set were uploaded without any modification.
+121 unmodified array files used to create the test set were used as a prospective trial to indicate the expected number of calls seen in routine analysis.
 
 \section{Definition of true positive and false positive calls}
 A true positive call is defined as any call overlapping with the reported CNV. There may be multiple calls within this region.
 \paragraph*{}
-A false positive call is any call which does not share a single probe with the reported CNV.
+A false positive call does not share a single probe with the reported CNV.
 
 \subsection{Unknown true positive calls}
-In the testing sets the true positive calls are defined as those which have been reported as clinically significant based on the referral reason however on average an array will have 3-4 regions of CNV \cite{joowook_ahn_average_2015}. These calls can be false positive calls made by the algorithm or real benign calls in regions of common copy number variation.
+In the training and test sets the true positive calls are defined as those which have been reported as clinically significant based on the referral reason however on average an array will have 3-4 regions of CNV \cite{joowook_ahn_average_2015}. These calls can be false positive calls made by the algorithm or real benign calls in regions of common copy number variation.
 \paragraph*{}
 Therefore the number of false positive calls will be inflated and the true specificity unknown.

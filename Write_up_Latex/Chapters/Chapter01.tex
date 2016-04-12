@@ -14,7 +14,7 @@ This data can then be analysed for copy number variation by applying one of a nu
 Dividing the signal intensity of Cy5 by that of Cy3 produces a ratio where equal copy number is 1. This ratio is then logged (base 2) to produce the log2 ratio where equal copy number is 0, a decrease in copy number is indicated by a negative value and increased copy number a positive  value. 
 \section{Copy Number Variation (CNV)}
 \ac{CNV} is a deviation in copy number from a reference genome which typically contains 2 copies of a DNA segment \cite{roy2013}. CNV can occur in recombination and replication events. CNV can be benign polymorphisms or associated with Mendelian, sporadic and complex disease possibly through gene dosage, disruption, fusion or positional effects \cite{zhang2009}.
-\section{Application of array CGH in clinical setting}
+\section{Application of array CGH in the clinical setting}
 In 2009, array CGH started replacing karyotyping as the method for detection of CNV in NHS diagnostic genetic services. Array CGH offers a higher resolution, less reliance on analyst interpretation/skill and the advantage of a high throughput practical workflow, however few Trusts actually have this test commissioned as a first line test due to the higher cost. Guy`s and St Thomas` NHS Trust adopted a patient to patient hybridisation approach, halving the cost of consumables by replacing the reference sample with another patient sample \cite{ahn2010}.
 
 \paragraph*{}
@@ -39,7 +39,7 @@ The first challenge can be overcome by comparing the signal intensities of each 
 \paragraph*{}
 The second challenge is currently overcome with ``a careful consideration of patient referral information`` to reduce the risk of this occurring. Hybridisation partners are mismatched on phenotype \cite{ahn2010}. This assumes that patients with differing referral reasons eg heart vs renal defects will not have the same underlying CNV. Furthermore, CNV is rare and therefore the risk of two patients with the same CNV being hybridised together is low to start with, even without phenotype mismatching.
 
-\section{Project Rationale}
+\section{Project rationale}
 Financial pressures on the NHS are requiring increasingly innovative approaches. Adopting a patient to patient hybridisation approach halves the cost of performing the test \cite{ahn2010}.
 \paragraph*{}
 One fear preventing adoption of a patient to patient approach in a clinical setting is the fear of missing a diagnosis due to shared CNV in hybridisation partners \cite{dunlop2015}. 
@@ -59,10 +59,10 @@ Simplifying the creation of a worksheet will save time, possibly reassigned to a
 \paragraph*{}
 More importantly further reducing the chance of missing an CNV improves the service the patient receives, ending, or preventing a diagnostic odyssey.
 
-\section{Project Aims}
+\section{Project aims}
 The aim of this project is investigate a tool which is run during data processing and acts as a screen to detect CNV before the array present in both hybridisation partners.
 
-\section{Array Design}
+\section{Array design}
 The arrays, reagents, equipment and software used to process and analyse are manufactured by Agilent Technologies \cite{agilenttechnologies_microarrays}.
 \paragraph*{}
 The array is an 8x60K array with a median resolution of 120kb. 
@@ -71,7 +71,7 @@ The array was custom designed using the online probe catalogue eArray \cite{agil
 \paragraph*{}
 A request for a tool similar to the aims of this project was sent to and declined by Agilent.
 
-\subsection{Feature Extraction}
+\subsection{Feature extraction}
 After the arrays have been processed in the laboratory and scanned (Figure \ref{fig:microarrayslide}) the array image undergoes feature extraction.
 \begin{figure}
 \centering
@@ -88,7 +88,7 @@ At each probe a log ratio is calculated from the two signal intensities (equatio
 Log10\ \frac{Cy5\ signal\ intensity}{Cy3\ signal\ intensity}
 \end{equation} 
 
-\subsection{Feature Extraction File}
+\subsection{Feature extraction file}
 The result of feature extraction is one feature extraction file per array, a tab delimited text file of 10-15mb in size.
 \paragraph*{}
 The feature extraction file can be created in four levels of  verbosity: full, compact (default), QC and minimal. 
@@ -107,7 +107,7 @@ The majority of the file is made up by the features section with one row per pro
 \section{Use of algorithms to detect copy number variation}
 If all goals of this project are met the tool produced will have much the same role as the aberration detection algorithms, taking raw signal intensities and identifying CNV.
 \paragraph*{}
-There are a number of algorithms which call \ac{CNV} from \ac{CGH} data. These algorithms are recursive binary segmentation methods which break chromosomes into segments of equal copy number. Examples include Z scores, \ac{CBS}, \ac{ADM2}, Nexus and \ac{HMM}. 
+There are a number of algorithms which call \ac{CNV} from \ac{CGH} data. These algorithms are recursive binary segmentation methods which break chromosomes into segments of equal copy number. Examples include Z scores, \ac{CBS}, \ac{ADM} 1 and 2, Nexus and \ac{HMM}. 
 
 \subsection{Z score algorithm}
 A Z score is a statistical measure of deviation from the mean for a normally distributed population. The Z score algorithm assigns each probe a Z score based on the log ratio. Any probes outside a user defined cut off (R) are classified as an outlier, or significantly away from mean. 
@@ -146,7 +146,7 @@ Definition of an interval is determined using permutation testing, creating inte
 \paragraph*{}
 A number of checks are performed to ensure the correct end points have been found including edge effect correction, change point pruning and estimation of the log score distribution.
 
-\subsection{Hidden Markov Model}
+\subsection{Hidden Markov model}
 The hidden Markov model (HMM) \cite{agilent_technologies_agilent_2011} uses observations (log ratios) to determine the state of a hidden or latent value (copy number). The HMM has a chain property which takes into account the state of the previous probe.
 \paragraph*{}
 Firstly the data is segmented: the Haar wavelet is used to normalise the data before breakpoints are defined using preset parameters (FDR threshold). This step also calculates probabilities and probability distribution parameters used in later steps.
@@ -155,7 +155,7 @@ The HMM is then applied. The forward-backward algorithm is used to calculate the
 \paragraph*{}
 Finally the Viterbi algorithm is used to assign a state to each probe.
 
-\subsection{Algorithm Performance}
+\subsection{Algorithm performance}
 Each algorithm performs differently depending on the signal:noise ratio and the size of the aberration\cite{willenbrock2005}.
 \paragraph*{}
 Circular binary segmentation (CBS) is rated as one of the most consistent performers albeit one of the most computationally demanding \cite{lai2005,willenbrock2005}. Some algorithms` performance varies greatly depending on user defined parameters which may be difficult to establish \cite{lai2005}.

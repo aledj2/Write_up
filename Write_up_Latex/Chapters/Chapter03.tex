@@ -3,7 +3,7 @@
 %************************************************
 \section{Training cases}
 \subsection{Z score threshold}
-Investigating the Z score of probes within regions known to be abnormal suggests a range of Z score thresholds to define probes as abnormal  to investigate (Figure \ref{fig:probeswithinreportedregion}). 
+Investigating the Z score of probes within regions known to be abnormal indicates Z score thresholds that can be applied to mark probes as normal or abnormal (Figure \ref{fig:probeswithinreportedregion}). 
 \paragraph*{}
 However, reported regions may contain normal probes and whilst sensitivity is favoured over specificity a balance must be found to prevent many false positive calls.
 
@@ -16,7 +16,7 @@ However, reported regions may contain normal probes and whilst sensitivity is fa
 
 
 \subsection{Removal of cases with high false positive calls}
-A range of Z score thresholds were applied, starting at $\pm  $ 2.374,  defining abnormal probes as the upper 1\% and lower 1\% of the reference range, and increasing up to 4.25 (Table \ref{tab:training_set_calls_86}).
+A range of Z score thresholds were applied, starting at $\pm  $ 2.374,  defining abnormal probes as the upper 1\% and lower 1\% of the reference range, and increasing up to $\pm $ 4.25 (Table \ref{tab:training_set_calls_86}).
 
 \begin{table}[h]
 \centering
@@ -40,7 +40,7 @@ At the lowest Z score threshold (2.374) the false negative rate was 8\% with 67\
 \paragraph*{}
 The same Z score threshold resulted in 10228 false positive calls, of which 94\% came from just five arrays (range 1612-2128). The average number of false positive calls in the other 81 arrays was 10.8 (max 104) (Table \ref{tab:training_set_calls}).
 \paragraph*{}
-Visual inspection of the array traces and the raw data from these 5 arrays gave no indication why so many false positives calls were made or how this could be mediated/predicted. Therefore these five arrays were considered a different population and excluded from further analysis.
+Visual inspection of the array traces and the raw data from these 5 arrays gave no indication why so many false positives calls were made or how this could be predicted. Therefore these five arrays were considered a different population and excluded from further analysis.
 \subsection{Comparison of true positive and false positive calls}
 \begin{table}[]
 \centering
@@ -58,7 +58,6 @@ Number of false positive calls                                                  
 \end{tabular}%
 }
 \end{table}
-\paragraph*{}
 The remaining 81 arrays show that at least one call was detected within the abnormal region in 94\% of cases with a Z score up to 4 (Table \ref{tab:training_set_calls}).
 \\
 Using a Z score of 2.374 nearly 2 in 3 arrays had a false positive call. A Z score threshold of 4 reduced the frequency of false positive calls to 1 in 4 arrays, with an average 1.66 and maximum 6 false positive calls per array.
@@ -74,7 +73,7 @@ The length of false positive calls are shorter than true positive calls. Increas
 \end{figure}
 
 \subsubsection{Difference between true and false positive Z scores using a threshold of 2.374}
-Alternatively increasing the Z score threshold to above the lowest scoring probe in abnormal regions may prevent the region being called \ref{fig:consecutiveprobeanalysis}.
+Alternatively increasing the Z score threshold to above the lowest scoring probe in abnormal regions may prevent the region being called (Figure \ref{fig:consecutiveprobeanalysis}).
 \paragraph*{}
 Examining the minimum (Figure \ref{fig:lowest_2_374}) and average (Figure \ref{fig:average_2_374}) Z scores for each true and false positive calls show that the two populations are not disparate therefore increasing the Z score threshold may also remove true positives. 
 \begin{figure}[h]
@@ -112,7 +111,4 @@ Increasing the Z score threshold to 3.55 showed that the average and lowest conf
 \end{figure}
 
 \subsubsection{Suitability of reference range}
-There were no recurring false positives calls to suggest the reference ranges were unsuitable.
-
-
-
+There were no recurring false positives calls to suggest the reference range is unsuitable.
